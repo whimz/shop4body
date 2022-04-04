@@ -1,0 +1,85 @@
+$item-margin-20: 20px;
+$grid-margin-20: -20px;
+$item-margin-10: 10px;
+$grid-margin-10: -10px;
+
+//-- items with 20px side margins
+@function itemWidth-10($qty){
+  $result: calc((100% - 2 * #{$item-margin-20} * #{$qty} ) / #{$qty});
+  @return $result;
+}
+
+//-- items with 10px side margins
+@function itemWidth-20($qty){
+  $result: calc((100% - 2 * #{$item-margin-10} * #{$qty} ) / #{$qty});
+  @return $result;
+}
+
+.grid{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 $grid-margin-20;
+  overflow: hidden;
+
+  &-5{
+    .grid-item{
+      width: itemWidth-10(5);
+    }
+  }
+    
+  &-3{
+    .grid-item{
+      width: itemWidth-10(3)
+    }
+  }
+    
+  &-2{
+    margin: 0 $grid-margin-10;
+    .grid-item{
+      width: itemWidth-20(2);
+      margin-right: $item-margin-10;
+      margin-left: $item-margin-10;
+    }
+  }
+    
+}
+  
+.grid-item{
+  position: relative;
+  margin-right: $item-margin-20;
+  margin-left: $item-margin-20;
+  margin-bottom: 3.5rem;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px){
+  .grid-5{
+    .grid-item{
+      width: itemWidth-10(3);
+    }
+  }
+}
+  
+@media screen and (max-width: 768px){
+  .grid-5, .grid-3{
+    .grid-item{
+      width: itemWidth-10(2);
+    }
+  }
+  .grid-2{
+    .grid-item{
+      width: itemWidth-20(1);
+    }
+  }
+}
+
+@media screen and (max-width: 480px){
+  .grid-5, .grid-3{
+    .grid-item{
+      width: itemWidth-10(1);
+    }
+  }
+}
+  

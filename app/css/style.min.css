@@ -1,0 +1,83 @@
+.grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 -20px;
+  overflow: hidden;
+}
+.grid-5 .grid-item {
+  width: -webkit-calc((100% - 2 * 20px * 5 ) / 5);
+  width: -moz-calc((100% - 2 * 20px * 5 ) / 5);
+  width: calc((100% - 2 * 20px * 5 ) / 5);
+}
+.grid-3 .grid-item {
+  width: -webkit-calc((100% - 2 * 20px * 3 ) / 3);
+  width: -moz-calc((100% - 2 * 20px * 3 ) / 3);
+  width: calc((100% - 2 * 20px * 3 ) / 3);
+}
+.grid-2 {
+  margin: 0 -10px;
+}
+.grid-2 .grid-item {
+  width: -webkit-calc((100% - 2 * 10px * 2 ) / 2);
+  width: -moz-calc((100% - 2 * 10px * 2 ) / 2);
+  width: calc((100% - 2 * 10px * 2 ) / 2);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.grid-item {
+  position: relative;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 3.5rem;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  .grid-5 .grid-item {
+    width: -webkit-calc((100% - 2 * 20px * 3 ) / 3);
+    width: -moz-calc((100% - 2 * 20px * 3 ) / 3);
+    width: calc((100% - 2 * 20px * 3 ) / 3);
+  }
+}
+@media screen and (max-width: 768px) {
+  .grid-5 .grid-item, .grid-3 .grid-item {
+    width: -webkit-calc((100% - 2 * 20px * 2 ) / 2);
+    width: -moz-calc((100% - 2 * 20px * 2 ) / 2);
+    width: calc((100% - 2 * 20px * 2 ) / 2);
+  }
+
+  .grid-2 .grid-item {
+    width: -webkit-calc((100% - 2 * 10px * 1 ) / 1);
+    width: -moz-calc((100% - 2 * 10px * 1 ) / 1);
+    width: calc((100% - 2 * 10px * 1 ) / 1);
+  }
+}
+@media screen and (max-width: 480px) {
+  .grid-5 .grid-item, .grid-3 .grid-item {
+    width: -webkit-calc((100% - 2 * 20px * 1 ) / 1);
+    width: -moz-calc((100% - 2 * 20px * 1 ) / 1);
+    width: calc((100% - 2 * 20px * 1 ) / 1);
+  }
+}
+/*# sourceMappingURL=style.min.css.map */
