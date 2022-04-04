@@ -5,7 +5,7 @@ $item-margin-10: 10px;
 $grid-margin-10: -10px;
 
 $item-margin-5: 2.5px;
-$grid-margin-5: 2.5px;
+$grid-margin-5: -2.5px;
 
 //-- items with 20px side margins
 @function itemWidth-10($qty){

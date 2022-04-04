@@ -25,14 +25,18 @@
      -moz-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin: 0 2.5px;
+  margin: 0 -2.5px;
   overflow: hidden;
 }
 .grid .grid-item {
+  position: relative;
+  margin-right: 2.5px;
+  margin-left: 2.5px;
   width: -webkit-calc((100% - 2 * 2.5px * 6 ) / 6);
   width: -moz-calc((100% - 2 * 2.5px * 6 ) / 6);
   width: calc((100% - 2 * 2.5px * 6 ) / 6);
   margin-bottom: 25px;
+  overflow: hidden;
 }
 @media screen and (max-width: 1640px) {
   .grid .grid-item {
@@ -81,14 +85,6 @@
   width: calc((100% - 2 * 10px * 2 ) / 2);
   margin-right: 10px;
   margin-left: 10px;
-}
-
-.grid-item {
-  position: relative;
-  margin-right: 2.5px;
-  margin-left: 2.5px;
-  margin-bottom: 3.5rem;
-  overflow: hidden;
 }
 
 @media screen and (max-width: 1024px) {
@@ -836,6 +832,15 @@ html, body {
   margin: 0;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .product-carasoul {
+    -webkit-flex-basis: -webkit-calc(100% - 300px);
+        -ms-flex-preferred-size: calc(100% - 300px);
+            flex-basis: -moz-calc(100% - 300px);
+            flex-basis: calc(100% - 300px);
+    margin-left: auto;
+  }
+}
 @media only screen and (max-width: 767px) {
   .navibar-header {
     z-index: 200;

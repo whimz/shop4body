@@ -2,6 +2,15 @@ html, body{
 	margin: 0;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.product-carasoul{
+		flex-basis: calc(100% - 300px);
+		margin-left: auto;
+	}
+	
+}
+
+
 @media only screen and (max-width: 767px){
 	.navibar-header {
     z-index: 200;
