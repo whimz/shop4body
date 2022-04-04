@@ -298,4 +298,3 @@ if(dropDownItems.length !== 0){
        }
    });
 }
-console.log('testing git ');

@@ -42,8 +42,9 @@ function browserSync(){
   browsersync.init({
     server: {
       baseDir: 'app/'
-    }
-  })
+    },
+    notify: false
+  });
 }
 
 function build(){

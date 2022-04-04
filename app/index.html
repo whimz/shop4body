@@ -1,18 +1,1130 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
-<body>
-  <h1>fcuk</h1>
-  <p>lorem*50</p>
-  <div class="test">asd</div>
+<!-- saved from url=(0040)https://localhost:44374/front/favourites -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" async="" src="./Shop4body.dk_files/f.txt"></script><script type="text/javascript" async="" src="./Shop4body.dk_files/analytics.js.download"></script><script type="text/javascript" async="" src="./Shop4body.dk_files/js"></script><script type="text/javascript" async="" src="./Shop4body.dk_files/js(1)"></script><script src="./Shop4body.dk_files/1209174372429402" async=""></script><script async="" src="./Shop4body.dk_files/fbevents.js.download"></script><script src="./Shop4body.dk_files/jquery.min.js.download"></script>
+    <title>Shop4body.dk</title>
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="https://localhost:44374/images/logo/favicon/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Shop4body.dk_files/css2" rel="stylesheet">
+   <link rel="stylesheet" href="./Shop4body.dk_files/bootstrap.min.css">
+    <link href="./Shop4body.dk_files/application.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Shop4body.dk_files/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+<script async="" src="./Shop4body.dk_files/js(2)"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-67746026-1');
 
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="js/main.min.js"></script>
-</body>
-</html>
+
+        gtag('config', 'AW-953585602');
+        gtag('config', 'AW-953585602', { 'allow_enhanced_conversions': true });
+        gtag('event', 'page_view', {
+            'send_to': 'AW-953585602',
+            'ecomm_pagetype': 'other'
+            });
+</script>
+
+
+
+    <!--[if IE]><html class="ie">< ![endif]-->
+    
+    <style>
+    		/*.scroll-lock{
+    			overflow: hidden;
+    		}*/
+
+    		/*.navibar{
+    			position: fixed;
+    		}*/
+
+        .favourite {
+            display: flex;
+            padding: 12px;
+            position: relative;
+        }
+
+            .favourite:not(:last-of-type) {
+                border-bottom: 1px solid #e5e5e5;
+            }
+
+        .favourite_remove {
+            font-size: 16px;
+            color: red;
+            margin-right: 10px;
+            cursor: pointer;
+            align-self: center;
+        }
+
+        .favourites ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .favourite_image {
+            margin-right: 10px;
+            align-self: center;
+        }
+
+        .favourite_overall_info {
+            width: 100%;
+            flex-shrink: 1;
+        }
+
+        @media (min-width: 46.25em) {
+            .favourite_overall_info {
+                min-width: 160px;
+            }
+        }
+
+        @media (max-width: 46.24em) {
+            .favourite {
+                padding: 16px 40px 16px 12px;
+                flex-wrap: wrap;
+            }
+
+            .favourite_addtocart {
+                width: calc(100% + 46px);
+                margin-right: -32px;
+                margin-top: 16px;
+            }
+
+            .favourite_image {
+                align-self: auto;
+                flex: 1;
+            }
+
+            .favourite_overall_info {
+                flex: 2;
+            }
+
+            .favourite_remove {
+                position: absolute;
+                right: 8px;
+                top: 50px;
+            }
+        }
+
+
+        .favourite_overall_info {
+            margin-right: 18px;
+            max-width: 400px;
+        }
+
+        .favourite_addtocart {
+            align-self: center;
+        }
+
+        .favourite_title, .favourite_title a {
+            display: block;
+            color: #44403e;
+            font-weight: 600;
+            margin-bottom: 8px;
+            line-height: normal;
+        }
+
+        .favourite_price {
+            color: #44403e;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .favourite_stock {
+            color: #47bb49;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        @media screen and (max-width: 767px){
+            .navibar .navibar-container .navibar-items > li > a,
+            .navi-footer-links ul li a {
+                white-space: nowrap;
+                word-break: normal;
+            }
+            .navibar{
+                width: 0;
+                overflow: hidden;
+                transform: none;
+            }
+            .navibar.is-open{
+              width: 70%;
+            }
+        }
+    </style>
+
+<script src="./Shop4body.dk_files/f(1).txt"></script><script src="./Shop4body.dk_files/f(2).txt"></script><script src="./Shop4body.dk_files/f(3).txt"></script></head>
+<body>
+       <div class="mdl-popup" id="mdl-popup">
+        <div class="popup-container">
+            <div class="btn-close mdl-btn-close"></div>
+              <!-- Modal -->
+<div class="popup-content" data-popup="login">
+    <div class="popup-header">
+    <h4 class="popup-title">Logg Inn</h4>
+    </div>
+    <div class="popup-body">
+    <div class="frm-group-danger-text" id="errorDiv"></div>
+    <form name="external-auth" method="post" action="/my/account/ExternalLoginPopup">
+        <input hidden name="provider" value="Facebook" />
+        <button type="submit" class="btn btn-block btn-facebook">Fortsett med Facebook</button>
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8NEcH6SvpbVNnUiE9G-aa0cg2FVk07ae2b0i99uLRtA3tpW4qSl9QAjrSho69X4waFzj903ipLIibD3VTYy3tEgwwkLXj8LNHvt0IBwmlQrTDWd0epElV4twcnrMyrulyT54VK6gEJ0JvBLP28qNl9Q" /></form>
+    <hr data-content="eller" class="popup-divider">
+    <form method="post" id="modal_login_form" class="application-form" action="/categorylist.aspx">
+        <div class="text-danger validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
+</ul></div>
+        <div class="frm-group">
+        <label class="input-title" for="ModalEmail">E-mail</label>
+        <input class="frm-control" type="email" name="email" data-val="true" data-val-email="Dette er ikke en gyldig e-postadresse." data-val-required="E-postadresse m&#xE5; fullf&#xF8;res" id="ModalEmail" value="">
+        <span class="text-danger field-validation-valid" data-valmsg-for="ModalEmail" data-valmsg-replace="true"></span>
+        </div>
+        <div class="frm-group">
+        <label class="input-title" for="ModalPassword">Password</label>
+        <input class="frm-control" type="password" data-val="true" data-val-required="Passord m&#xE5; legges inn" id="ModalPassword" name="ModalPassword" />
+        <span class="text-danger field-validation-valid" data-valmsg-for="ModalPassword" data-valmsg-replace="true"></span>
+        </div>
+        <div class="frm-group">
+        <button class="btn btn-block btn-primary">Logg Inn</button>
+        </div>
+        <div class="frm-group">
+            <a href="/my/account/forgotpassword" class="button-link align-right">Glemt passord?</a>
+        </div>
+        <div class="frm-group">
+        <ul>
+            <li><a href="/my/account/register" class="btn-link align-left">Opprett en ny bruker</a></li>
+        </ul>
+        </div>
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8NEcH6SvpbVNnUiE9G-aa0cg2FVk07ae2b0i99uLRtA3tpW4qSl9QAjrSho69X4waFzj903ipLIibD3VTYy3tEgwwkLXj8LNHvt0IBwmlQrTDWd0epElV4twcnrMyrulyT54VK6gEJ0JvBLP28qNl9Q" /></form>
+    </div>
+    <div class="popup-footer">
+            
+    </div>
+</div>
+            
+        </div>
+    </div>
+    
+    <header class="top-navigation">
+      <div class="header-top">
+        <div class="top-highlights">
+            <span>Rask levering</span>
+            <span>14 Dagers returrett</span>
+            <span>Gratis frakt ved kj&#xF8;p over 499,-</span>
+            <span>H&#xF8;y tilfredshet i anmeldelser fra v&#xE5;re kunder</span>
+            <span>Fragt bare 39 kr (inkl. Toll og MVA)</span>
+        </div>
+        <div class="header-main" data-search="tab">
+          <div class="header-main-logo">
+            <a href="/">
+                <img class="header-main-logo-desktop" src="/images/logo/shop4bodyno/logo.svg" alt="Shop4body.no">
+                <img class="header-main-logo-mobile" src="/images/logo/bookmark/flowerlogo.svg" alt="Shop4body.no">
+            </a>
+          </div>
+          <div class="header-main-search">
+            <form action="/front/search/index">
+              <input type="text" data-search="input" placeholder="S&#xF8;k..." name="srcquery" class="header-main-search-bar" id="inputSearch" autocomplete="off">
+              <span class="close" data-search="close">x</span>
+              <img class="search-icon js-search-icon" src="https://www.shop4body.dk/images/icons/search-icon.png" alt="">
+              <img class="search-icon js-search-icon-loader" src="https://www.shop4body.dk/images/icons/search-icon-loader.gif" alt=""
+                   style="width: 17px; display: none;">
+            </form>
+          </div>
+          <div class="header-main-quickLinks">
+            <div class="header-icon header-profile">
+                <a data-popup-id="login" data-popup-toggle href>
+                    <i class="my my-user-o"></i>
+                    <span class="header-icon__text">Logg Inn</span>
+                </a>
+            </div>
+            <div class="header-icon header-favourites">
+              <a href="/front/favourites">
+                <i class="my my-heart-o"></i>
+                <span class="header-favourites__count">0</span>
+                <span class="header-icon__text">Favoritter</span>
+              </a>
+            </div>
+            <div class="header-icon header-checkout">
+              <a href="/checkout/shoppingcart/cart" data-toggle="tooltip" title="99,95 kr" data-placement="bottom">
+                <i class="my my-shopping-cart"></i>
+                <span class="header-checkout__count">1</span>
+                <span class="header-icon__text">Kurv</span>
+              </a>
+            </div>
+            <div class="navibar-header">
+              <button type="button" class="navibar-header-toggle" data-navibar-header-toggle>
+                <span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="navibar-header-text">Menu</span>
+                      </span>
+              </button>
+            </div>
+          </div>  
+        </div>
+        <nav class="navibar" role="navigation" data-navibar>
+    <div class="navibar-container">
+        <div class="navibar-wrapper">
+            <ul class="navibar-items">
+                 <li ><a href="/c/slank-detox">Detox</a></li>
+                <li class="dropdown-item">
+                    <a href="/c/fotpleie" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fotpleie <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li ><a href="/c/forfotspleie">Forfotspleie</a></li>
+                        <li ><a href="/c/fotcrem">Fotcrem</a></li>
+                        <li ><a href="/c/hammertaa">Hammert&#xE5;</a></li>
+                        <li ><a href="/c/helspore">Helspore</a></li>
+                        <li ><a href="/c/knyster-hallux-valgus">Knyster/Hallux valgus</a></li>
+                        <li ><a href="/c/liktorne">Liktorne</a></li>
+                        <li ><a href="/c/nedsunken-forfot">Nedsunken forfot&#xD;&#xA;</a></li>
+                        <li ><a href="/c/Saaler">S&#xE5;ler</a></li>
+                        <li ><a href="/c/svangstoette">Svangst&#xF8;tte</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-item">
+                    <a href="/c/hudpleie&#xD;&#xA;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hudpleie&#xD;&#xA; <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li ><a href="/c/aloe-vera">Aloe Vera</a></li>
+                        <li ><a href="/c/ansiktspleie">Ansiktspleie</a></li>
+                        <li ><a href="/c/derma-rollers">Derma Rollers</a></li>
+                        <li ><a href="/c/hudpleie">Hudpleie</a></li>
+                        <li ><a href="/c/oekologisk-hudpleie">&#xD8;kologisk hudpleie</a></li>
+                    </ul>
+                </li>
+                 <li ><a href="/c/kosttilskudd">Kosttilskudd</a></li>
+                <li class="dropdown-item">
+                    <a href="/c/loep" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">L&#xF8;p <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li ><a href="/c/ankelstoette">Ankelst&#xF8;tte</a></li>
+                        <li ><a href="/c/fingre-haandledd-albuer">Fingre, h&#xE5;ndledd og albuer</a></li>
+                        <li ><a href="/c/fitness-verktoey">Fitness verkt&#xF8;y</a></li>
+                        <li ><a href="/c/kne-support">Kne Support</a></li>
+                        <li ><a href="/c/loepelys">L&#xF8;pelys</a></li>
+                        <li ><a href="/c/loepesaaler">L&#xF8;pes&#xE5;ler</a></li>
+                        <li ><a href="/c/loepestroemper">L&#xF8;pestr&#xF8;mper</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-item">
+                    <a href="/c/magnetterapi" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Magnetterapi <span class="caret"></span></a>
+                    <ul class="dropdown-menu dropdown-menu-open">
+                        <li ><a href="/c/kobber-magnetarmbaand">Kobber magnetarmb&#xE5;nd</a></li>
+                        <li class="current_page_item"><a href="/c/kropsmagneter">Kropsmagneter</a></li>
+                        <li ><a href="/c/Magnethalskjeder">Magnethalskjeder</a></li>
+                        <li ><a href="/c/magnetringer">Magnetringer</a></li>
+                        <li ><a href="/c/mangetarmbaand">Titanium magnetarmb&#xE5;nd</a></li>
+                    </ul>
+                </li>
+                 <li ><a href="/c/massasje">Massasje</a></li>
+                 <li ><a href="/c/snorken">Snorken</a></li>
+                 <li ><a href="/c/stokker">Stokker</a></li>
+                <li class="dropdown-item">
+                    <a href="/c/stoette-kompresjon" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">St&#xF8;tte &amp; kompresjon <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li ><a href="/c/albuebeskytter">Albuebeskytter</a></li>
+                        <li ><a href="/c/ankelstoette">Ankelst&#xF8;tte</a></li>
+                        <li ><a href="/c/fingre-haandledd-hansker">Fingre, h&#xE5;ndledd og hansker</a></li>
+                        <li ><a href="/c/knestoette">Knest&#xF8;tte</a></li>
+                        <li ><a href="/c/korsrygg-skulde-rygg">Korsrygg, skulder &amp; rygg</a></li>
+                        <li ><a href="/c/kul-varmekrem">Kul / varmekrem</a></li>
+                        <li ><a href="/c/stoettestroemper">St&#xF8;ttestr&#xF8;mper</a></li>
+                    </ul>
+                </li>
+                 <li ><a href="/c/til-barn">Til barn</a></li>
+                 <li ><a href="/c/utsalg">Utsalg</a></li>
+            </ul>
+            <div class="navi-footer-links">
+            <ul>
+                <li><a rel="nofollow" href="/freight.aspx" title="Frakt">Frakt</a></li>
+                <li><a rel="nofollow" href="/contact.aspx" title="Kontakt oss">Kontakt oss</a></li>
+                <li><a rel="nofollow" href="/terms.aspx" title="Handelsbetingelser">Handelsbetingelser</a></li>
+                <li><a href="https://www.facebook.com/Shop4bodyNorge/" target="_blank" title=">F&#xF8;lg oss p&#xE5; Facebook">F&#xF8;lg oss p&#xE5; Facebook</a></li>
+                <li><a rel="nofollow" href="/cookies.aspx" title="Cookies">Cookies</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+      </div>
+    </header>
+    <div class="wrapper">
+        
+<input type="hidden" id="catId" value="132" />  
+<div class="body-container">
+    <div class="category-wrapper">
+        <div class="category-container">
+             <div class="body-sidebar" id="body-sidebar">         
+    <div class="sidebar-accordion">
+            <ul>
+              <li class="pagenav">
+                <h4 ><a href="/c/slank-detox">Detox</a>
+                </h4>
+             </li>
+            </ul>
+            <ul>
+              <li class="pagenav">
+                <h4 ><a href="/c/fotpleie">Fotpleie</a>
+                    <i class="arrow right"></i>
+                </h4>
+                <ul >
+                    <li class="page_item"><a href="/c/forfotspleie">Forfotspleie</a></li>
+                    <li class="page_item"><a href="/c/fotcrem">Fotcrem</a></li>
+                    <li class="page_item"><a href="/c/hammertaa">Hammert&#xE5;</a></li>
+                    <li class="page_item"><a href="/c/helspore">Helspore</a></li>
+                    <li class="page_item"><a href="/c/knyster-hallux-valgus">Knyster/Hallux valgus</a></li>
+                    <li class="page_item"><a href="/c/liktorne">Liktorne</a></li>
+                    <li class="page_item"><a href="/c/nedsunken-forfot">Nedsunken forfot&#xD;&#xA;</a></li>
+                    <li class="page_item"><a href="/c/Saaler">S&#xE5;ler</a></li>
+                    <li class="page_item"><a href="/c/svangstoette">Svangst&#xF8;tte</a></li>
+                </ul>              
+             </li>
+            </ul>
+            <ul>
+              <li class="pagenav">
+                <h4 ><a href="/c/hudpleie&#xD;&#xA;">Hudpleie&#xD;&#xA;</a>
+                    <i class="arrow right"></i>
+                </h4>
+                <ul >
+                    <li class="page_item"><a href="/c/aloe-vera">Aloe Vera</a></li>
+                    <li class="page_item"><a href="/c/ansiktspleie">Ansiktspleie</a></li>
+                    <li class="page_item"><a href="/c/derma-rollers">Derma Rollers</a></li>
+                    <li class="page_item"><a href="/c/hudpleie">Hudpleie</a></li>
+                    <li class="page_item"><a href="/c/oekologisk-hudpleie">&#xD8;kologisk hudpleie</a></li>
+                </ul>              
+             </li>
+            </ul>
+            <ul>
+              <li class="pagenav">
+                <h4 ><a href="/c/kosttilskudd">Kosttilskudd</a>
+                </h4>
+             </li>
+            </ul>
+            <ul>
+              <li class="pagenav">
+                <h4 ><a href="/c/loep">L&#xF8;p</a>
+                    <i class="arrow right"></i>
+                </h4>
+                <ul >
+                    <li class="page_item"><a href="/c/ankelstoette">Ankelst&#xF8;tte</a></li>
+                    <li class="page_item"><a href="/c/fingre-haandledd-albuer">Fingre, h&#xE5;ndledd og albuer</a></li>
+                    <li class="page_item"><a href="/c/fitness-verktoey">Fitness verkt&#xF8;y</a></li>
+                    <li class="page_item"><a href="/c/kne-support">Kne Support</a></li>
+                    <li class="page_item"><a href="/c/loepelys">L&#xF8;pelys</a></li>
+                    <li class="page_item"><a href="/c/loepesaaler">L&#xF8;pes&#xE5;ler</a></li>
+                    <li class="page_item"><a href="/c/loepestroemper">L&#xF8;pestr&#xF8;mper</a></li>
+                </ul>              
+             </li>
+            </ul>
+            <ul>
+              <li class="pagenav">
+                <h4 ><a href="/c/magnetterapi">Magnetterapi</a>
+                    <i class="arrow right"></i>
+                </h4>
+                <ul style="display:block">
+                    <li class="page_item"><a href="/c/kobber-magnetarmbaand">Kobber magnetarmb&#xE5;nd</a></li>
+                    <li class="page_item current_page_item"><a href="/c/kropsmagneter">Kropsmagneter</a></li>
+                    <li class="page_item"><a href="/c/Magnethalskjeder">Magnethalskjeder</a></li>
+                    <li class="page_item"><a href="/c/magnetringer">Magnetringer</a></li>
+                    <li class="page_item"><a href="/c/mangetarmbaand">Titanium magnetarmb&#xE5;nd</a></li>
+                </ul>              
+             </li>
+            </ul>
+            <ul>
+              <li class="pagenav">
+                <h4 ><a href="/c/massasje">Massasje</a>
+                </h4>
+             </li>
+            </ul>
+            <ul>
+              <li class="pagenav">
+                <h4 ><a href="/c/snorken">Snorken</a>
+                </h4>
+             </li>
+            </ul>
+            <ul>
+              <li class="pagenav">
+                <h4 ><a href="/c/stokker">Stokker</a>
+                </h4>
+             </li>
+            </ul>
+            <ul>
+              <li class="pagenav">
+                <h4 ><a href="/c/stoette-kompresjon">St&#xF8;tte &amp; kompresjon</a>
+                    <i class="arrow right"></i>
+                </h4>
+                <ul >
+                    <li class="page_item"><a href="/c/albuebeskytter">Albuebeskytter</a></li>
+                    <li class="page_item"><a href="/c/ankelstoette">Ankelst&#xF8;tte</a></li>
+                    <li class="page_item"><a href="/c/fingre-haandledd-hansker">Fingre, h&#xE5;ndledd og hansker</a></li>
+                    <li class="page_item"><a href="/c/knestoette">Knest&#xF8;tte</a></li>
+                    <li class="page_item"><a href="/c/korsrygg-skulde-rygg">Korsrygg, skulder &amp; rygg</a></li>
+                    <li class="page_item"><a href="/c/kul-varmekrem">Kul / varmekrem</a></li>
+                    <li class="page_item"><a href="/c/stoettestroemper">St&#xF8;ttestr&#xF8;mper</a></li>
+                </ul>              
+             </li>
+            </ul>
+            <ul>
+              <li class="pagenav">
+                <h4 ><a href="/c/til-barn">Til barn</a>
+                </h4>
+             </li>
+            </ul>
+            <ul>
+              <li class="pagenav">
+                <h4 ><a href="/c/utsalg">Utsalg</a>
+                </h4>
+             </li>
+            </ul>
+    </div>
+          
+</div>
+
+            <div class="product-carasoul">
+                <div class="body-breadcrumb"><ul><li><a href="/">Hjem</a></li><li><a href="/c/magnetterapi">Magnetterapi</a></li><li>Kropsmagneter</li></ul></div>
+                    <h2 class="cat-title">Kropsmagneter</h2>
+
+                <h3 class="cat-title"></h3>
+                <p>
+                    
+                </p>
+                <div class="nav-filter">
+                    <div id="nav-filter-mobile" class="nav-filter-item">
+                        <a class="nav-filter-item-dropdown navFilter" href="#">Kropsmagneter <i class="fa fa-chevron-up navFilter"></i><i class="fa fa-chevron-down"></i></a>
+                        <div class="nav-filter-dropdown-content">
+                            <ul>
+                              <li><a href="/c/magnetterapi">Magnetterapi</a></li>
+                                <ul>
+                                  <li><a href="/c/kobber-magnetarmbaand">Kobber magnetarmbånd</a></li>
+                                  <li class="nav-filter-dropdown-content-active"><a href="/c/kropsmagneter">Kropsmagneter</a></li>
+                                  <li><a href="/c/Magnethalskjeder">Magnethalskjeder</a></li>
+                                  <li><a href="/c/magnetringer">Magnetringer</a></li>
+                                  <li><a href="/c/mangetarmbaand">Titanium magnetarmbånd</a></li>
+                                <ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="nav-filter-sortBy" class="nav-filter-item">
+                    <a class="nav-filter-item-dropdown sortByFilter" href="#">Sorter etter <i class="fa fa-chevron-up sortByFilter"></i><i class="fa fa-chevron-down"></i></a>
+                    <div class="nav-filter-dropdown-content">
+                      <ul>
+                        <li><input type="radio" value="popularity" id="sortby-popularity" name="navFilterSortBy"checked><label for="sortby-popularity">&nbsp; Popularitet</label></li>
+                        <li><input type="radio" value="priceasc" id="sortby-price-lowhigh" name="navFilterSortBy"><label for="sortby-price-lowhigh">&nbsp; Pris (lav til h&#xF8;y)</label></li>
+                        <li><input type="radio" value="pricedesc" id="sortby-price-highlow" name="navFilterSortBy"><label for="sortby-price-highlow">&nbsp; Pris (h&#xF8;y til lav)</label></li>
+                        <li><input type="radio" value="newest" id="sortby-price-newest" name="navFilterSortBy"><label for="sortby-price-newest">&nbsp; Nyeste</label></li>
+                      </ul>
+                    </div>
+                  </div>  
+                </div>  
+
+
+
+                <div id="nyheder" class="product-cat-tab grid" style="display: block;">
+
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/kobber-kompressor-hansker?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/6827-m/kobber-kompressions-handsker-1-par-.jpg" alt="Kobber kompressor hansker - 1 par.">
+                      </a>
+                      <div class="item-des">
+                          <p class="carousel-prodheader">
+                            <a href="/p/kobber-kompressor-hansker?catid=132">Kobber kompressor hansker - 1 par.</a>
+                          </p>
+                        <div class="item-description">Til ømme, hovne og stive giktfingre.</div>
+                        <span class="prices">
+                          <span class="normalprice">129,95 kr</span>
+                        </span>                    
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/hansker-med-kompresjon?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/7995-m/handsker-med-kompression-1-par-.jpg" alt="Hansker med kompresjon - 1 par.">
+                        <span class="salePercentFlag">20%</span>
+                      </a>
+                      <div class="item-des">
+                        <p class="carousel-prodheader">
+                          <a href="/p/hansker-med-kompresjon?catid=132">Hansker med kompresjon - 1 par.</a>
+                        </p>
+                        <div class="item-description">Reduserer muskelsmerter, gikt, hovne og st..</div>
+                        <span class="prices">
+                          <span class="striked">149,95</span>
+                          <span class="offerprice">119,95 kr</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>            
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/kobber-kompressor-hansker?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/6827-m/kobber-kompressions-handsker-1-par-.jpg" alt="Kobber kompressor hansker - 1 par.">
+                      </a>
+                      <div class="item-des">
+                          <p class="carousel-prodheader">
+                            <a href="/p/kobber-kompressor-hansker?catid=132">Kobber kompressor hansker - 1 par.</a>
+                          </p>
+                        <div class="item-description">Til ømme, hovne og stive giktfingre.</div>
+                        <span class="prices">
+                          <span class="normalprice">129,95 kr</span>
+                        </span>                    
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/hansker-med-kompresjon?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/7995-m/handsker-med-kompression-1-par-.jpg" alt="Hansker med kompresjon - 1 par.">
+                        <span class="salePercentFlag">20%</span>
+                      </a>
+                      <div class="item-des">
+                        <p class="carousel-prodheader">
+                          <a href="/p/hansker-med-kompresjon?catid=132">Hansker med kompresjon - 1 par.</a>
+                        </p>
+                        <div class="item-description">Reduserer muskelsmerter, gikt, hovne og st..</div>
+                        <span class="prices">
+                          <span class="striked">149,95</span>
+                          <span class="offerprice">119,95 kr</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>            
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/kobber-kompressor-hansker?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/6827-m/kobber-kompressions-handsker-1-par-.jpg" alt="Kobber kompressor hansker - 1 par.">
+                      </a>
+                      <div class="item-des">
+                          <p class="carousel-prodheader">
+                            <a href="/p/kobber-kompressor-hansker?catid=132">Kobber kompressor hansker - 1 par.</a>
+                          </p>
+                        <div class="item-description">Til ømme, hovne og stive giktfingre.</div>
+                        <span class="prices">
+                          <span class="normalprice">129,95 kr</span>
+                        </span>                    
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/hansker-med-kompresjon?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/7995-m/handsker-med-kompression-1-par-.jpg" alt="Hansker med kompresjon - 1 par.">
+                        <span class="salePercentFlag">20%</span>
+                      </a>
+                      <div class="item-des">
+                        <p class="carousel-prodheader">
+                          <a href="/p/hansker-med-kompresjon?catid=132">Hansker med kompresjon - 1 par.</a>
+                        </p>
+                        <div class="item-description">Reduserer muskelsmerter, gikt, hovne og st..</div>
+                        <span class="prices">
+                          <span class="striked">149,95</span>
+                          <span class="offerprice">119,95 kr</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>            
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/kobber-kompressor-hansker?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/6827-m/kobber-kompressions-handsker-1-par-.jpg" alt="Kobber kompressor hansker - 1 par.">
+                      </a>
+                      <div class="item-des">
+                          <p class="carousel-prodheader">
+                            <a href="/p/kobber-kompressor-hansker?catid=132">Kobber kompressor hansker - 1 par.</a>
+                          </p>
+                        <div class="item-description">Til ømme, hovne og stive giktfingre.</div>
+                        <span class="prices">
+                          <span class="normalprice">129,95 kr</span>
+                        </span>                    
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/hansker-med-kompresjon?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/7995-m/handsker-med-kompression-1-par-.jpg" alt="Hansker med kompresjon - 1 par.">
+                        <span class="salePercentFlag">20%</span>
+                      </a>
+                      <div class="item-des">
+                        <p class="carousel-prodheader">
+                          <a href="/p/hansker-med-kompresjon?catid=132">Hansker med kompresjon - 1 par.</a>
+                        </p>
+                        <div class="item-description">Reduserer muskelsmerter, gikt, hovne og st..</div>
+                        <span class="prices">
+                          <span class="striked">149,95</span>
+                          <span class="offerprice">119,95 kr</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>            
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/kobber-kompressor-hansker?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/6827-m/kobber-kompressions-handsker-1-par-.jpg" alt="Kobber kompressor hansker - 1 par.">
+                      </a>
+                      <div class="item-des">
+                          <p class="carousel-prodheader">
+                            <a href="/p/kobber-kompressor-hansker?catid=132">Kobber kompressor hansker - 1 par.</a>
+                          </p>
+                        <div class="item-description">Til ømme, hovne og stive giktfingre.</div>
+                        <span class="prices">
+                          <span class="normalprice">129,95 kr</span>
+                        </span>                    
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/hansker-med-kompresjon?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/7995-m/handsker-med-kompression-1-par-.jpg" alt="Hansker med kompresjon - 1 par.">
+                        <span class="salePercentFlag">20%</span>
+                      </a>
+                      <div class="item-des">
+                        <p class="carousel-prodheader">
+                          <a href="/p/hansker-med-kompresjon?catid=132">Hansker med kompresjon - 1 par.</a>
+                        </p>
+                        <div class="item-description">Reduserer muskelsmerter, gikt, hovne og st..</div>
+                        <span class="prices">
+                          <span class="striked">149,95</span>
+                          <span class="offerprice">119,95 kr</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>            
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/kobber-kompressor-hansker?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/6827-m/kobber-kompressions-handsker-1-par-.jpg" alt="Kobber kompressor hansker - 1 par.">
+                      </a>
+                      <div class="item-des">
+                          <p class="carousel-prodheader">
+                            <a href="/p/kobber-kompressor-hansker?catid=132">Kobber kompressor hansker - 1 par.</a>
+                          </p>
+                        <div class="item-description">Til ømme, hovne og stive giktfingre.</div>
+                        <span class="prices">
+                          <span class="normalprice">129,95 kr</span>
+                        </span>                    
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/hansker-med-kompresjon?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/7995-m/handsker-med-kompression-1-par-.jpg" alt="Hansker med kompresjon - 1 par.">
+                        <span class="salePercentFlag">20%</span>
+                      </a>
+                      <div class="item-des">
+                        <p class="carousel-prodheader">
+                          <a href="/p/hansker-med-kompresjon?catid=132">Hansker med kompresjon - 1 par.</a>
+                        </p>
+                        <div class="item-description">Reduserer muskelsmerter, gikt, hovne og st..</div>
+                        <span class="prices">
+                          <span class="striked">149,95</span>
+                          <span class="offerprice">119,95 kr</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>            
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/kobber-kompressor-hansker?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/6827-m/kobber-kompressions-handsker-1-par-.jpg" alt="Kobber kompressor hansker - 1 par.">
+                      </a>
+                      <div class="item-des">
+                          <p class="carousel-prodheader">
+                            <a href="/p/kobber-kompressor-hansker?catid=132">Kobber kompressor hansker - 1 par.</a>
+                          </p>
+                        <div class="item-description">Til ømme, hovne og stive giktfingre.</div>
+                        <span class="prices">
+                          <span class="normalprice">129,95 kr</span>
+                        </span>                    
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/hansker-med-kompresjon?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/7995-m/handsker-med-kompression-1-par-.jpg" alt="Hansker med kompresjon - 1 par.">
+                        <span class="salePercentFlag">20%</span>
+                      </a>
+                      <div class="item-des">
+                        <p class="carousel-prodheader">
+                          <a href="/p/hansker-med-kompresjon?catid=132">Hansker med kompresjon - 1 par.</a>
+                        </p>
+                        <div class="item-description">Reduserer muskelsmerter, gikt, hovne og st..</div>
+                        <span class="prices">
+                          <span class="striked">149,95</span>
+                          <span class="offerprice">119,95 kr</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>            
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/kobber-kompressor-hansker?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/6827-m/kobber-kompressions-handsker-1-par-.jpg" alt="Kobber kompressor hansker - 1 par.">
+                      </a>
+                      <div class="item-des">
+                          <p class="carousel-prodheader">
+                            <a href="/p/kobber-kompressor-hansker?catid=132">Kobber kompressor hansker - 1 par.</a>
+                          </p>
+                        <div class="item-description">Til ømme, hovne og stive giktfingre.</div>
+                        <span class="prices">
+                          <span class="normalprice">129,95 kr</span>
+                        </span>                    
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/hansker-med-kompresjon?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/7995-m/handsker-med-kompression-1-par-.jpg" alt="Hansker med kompresjon - 1 par.">
+                        <span class="salePercentFlag">20%</span>
+                      </a>
+                      <div class="item-des">
+                        <p class="carousel-prodheader">
+                          <a href="/p/hansker-med-kompresjon?catid=132">Hansker med kompresjon - 1 par.</a>
+                        </p>
+                        <div class="item-description">Reduserer muskelsmerter, gikt, hovne og st..</div>
+                        <span class="prices">
+                          <span class="striked">149,95</span>
+                          <span class="offerprice">119,95 kr</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>            
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/kobber-kompressor-hansker?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/6827-m/kobber-kompressions-handsker-1-par-.jpg" alt="Kobber kompressor hansker - 1 par.">
+                      </a>
+                      <div class="item-des">
+                          <p class="carousel-prodheader">
+                            <a href="/p/kobber-kompressor-hansker?catid=132">Kobber kompressor hansker - 1 par.</a>
+                          </p>
+                        <div class="item-description">Til ømme, hovne og stive giktfingre.</div>
+                        <span class="prices">
+                          <span class="normalprice">129,95 kr</span>
+                        </span>                    
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/hansker-med-kompresjon?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/7995-m/handsker-med-kompression-1-par-.jpg" alt="Hansker med kompresjon - 1 par.">
+                        <span class="salePercentFlag">20%</span>
+                      </a>
+                      <div class="item-des">
+                        <p class="carousel-prodheader">
+                          <a href="/p/hansker-med-kompresjon?catid=132">Hansker med kompresjon - 1 par.</a>
+                        </p>
+                        <div class="item-description">Reduserer muskelsmerter, gikt, hovne og st..</div>
+                        <span class="prices">
+                          <span class="striked">149,95</span>
+                          <span class="offerprice">119,95 kr</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>            
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/kobber-kompressor-hansker?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/6827-m/kobber-kompressions-handsker-1-par-.jpg" alt="Kobber kompressor hansker - 1 par.">
+                      </a>
+                      <div class="item-des">
+                          <p class="carousel-prodheader">
+                            <a href="/p/kobber-kompressor-hansker?catid=132">Kobber kompressor hansker - 1 par.</a>
+                          </p>
+                        <div class="item-description">Til ømme, hovne og stive giktfingre.</div>
+                        <span class="prices">
+                          <span class="normalprice">129,95 kr</span>
+                        </span>                    
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/hansker-med-kompresjon?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/7995-m/handsker-med-kompression-1-par-.jpg" alt="Hansker med kompresjon - 1 par.">
+                        <span class="salePercentFlag">20%</span>
+                      </a>
+                      <div class="item-des">
+                        <p class="carousel-prodheader">
+                          <a href="/p/hansker-med-kompresjon?catid=132">Hansker med kompresjon - 1 par.</a>
+                        </p>
+                        <div class="item-description">Reduserer muskelsmerter, gikt, hovne og st..</div>
+                        <span class="prices">
+                          <span class="striked">149,95</span>
+                          <span class="offerprice">119,95 kr</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>            
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/kobber-kompressor-hansker?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/6827-m/kobber-kompressions-handsker-1-par-.jpg" alt="Kobber kompressor hansker - 1 par.">
+                      </a>
+                      <div class="item-des">
+                          <p class="carousel-prodheader">
+                            <a href="/p/kobber-kompressor-hansker?catid=132">Kobber kompressor hansker - 1 par.</a>
+                          </p>
+                        <div class="item-description">Til ømme, hovne og stive giktfingre.</div>
+                        <span class="prices">
+                          <span class="normalprice">129,95 kr</span>
+                        </span>                    
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/hansker-med-kompresjon?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/7995-m/handsker-med-kompression-1-par-.jpg" alt="Hansker med kompresjon - 1 par.">
+                        <span class="salePercentFlag">20%</span>
+                      </a>
+                      <div class="item-des">
+                        <p class="carousel-prodheader">
+                          <a href="/p/hansker-med-kompresjon?catid=132">Hansker med kompresjon - 1 par.</a>
+                        </p>
+                        <div class="item-description">Reduserer muskelsmerter, gikt, hovne og st..</div>
+                        <span class="prices">
+                          <span class="striked">149,95</span>
+                          <span class="offerprice">119,95 kr</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>            
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/kobber-kompressor-hansker?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/6827-m/kobber-kompressions-handsker-1-par-.jpg" alt="Kobber kompressor hansker - 1 par.">
+                      </a>
+                      <div class="item-des">
+                          <p class="carousel-prodheader">
+                            <a href="/p/kobber-kompressor-hansker?catid=132">Kobber kompressor hansker - 1 par.</a>
+                          </p>
+                        <div class="item-description">Til ømme, hovne og stive giktfingre.</div>
+                        <span class="prices">
+                          <span class="normalprice">129,95 kr</span>
+                        </span>                    
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/hansker-med-kompresjon?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/7995-m/handsker-med-kompression-1-par-.jpg" alt="Hansker med kompresjon - 1 par.">
+                        <span class="salePercentFlag">20%</span>
+                      </a>
+                      <div class="item-des">
+                        <p class="carousel-prodheader">
+                          <a href="/p/hansker-med-kompresjon?catid=132">Hansker med kompresjon - 1 par.</a>
+                        </p>
+                        <div class="item-description">Reduserer muskelsmerter, gikt, hovne og st..</div>
+                        <span class="prices">
+                          <span class="striked">149,95</span>
+                          <span class="offerprice">119,95 kr</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>            
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/kobber-kompressor-hansker?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/6827-m/kobber-kompressions-handsker-1-par-.jpg" alt="Kobber kompressor hansker - 1 par.">
+                      </a>
+                      <div class="item-des">
+                          <p class="carousel-prodheader">
+                            <a href="/p/kobber-kompressor-hansker?catid=132">Kobber kompressor hansker - 1 par.</a>
+                          </p>
+                        <div class="item-description">Til ømme, hovne og stive giktfingre.</div>
+                        <span class="prices">
+                          <span class="normalprice">129,95 kr</span>
+                        </span>                    
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/hansker-med-kompresjon?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/7995-m/handsker-med-kompression-1-par-.jpg" alt="Hansker med kompresjon - 1 par.">
+                        <span class="salePercentFlag">20%</span>
+                      </a>
+                      <div class="item-des">
+                        <p class="carousel-prodheader">
+                          <a href="/p/hansker-med-kompresjon?catid=132">Hansker med kompresjon - 1 par.</a>
+                        </p>
+                        <div class="item-description">Reduserer muskelsmerter, gikt, hovne og st..</div>
+                        <span class="prices">
+                          <span class="striked">149,95</span>
+                          <span class="offerprice">119,95 kr</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>            
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/kobber-kompressor-hansker?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/6827-m/kobber-kompressions-handsker-1-par-.jpg" alt="Kobber kompressor hansker - 1 par.">
+                      </a>
+                      <div class="item-des">
+                          <p class="carousel-prodheader">
+                            <a href="/p/kobber-kompressor-hansker?catid=132">Kobber kompressor hansker - 1 par.</a>
+                          </p>
+                        <div class="item-description">Til ømme, hovne og stive giktfingre.</div>
+                        <span class="prices">
+                          <span class="normalprice">129,95 kr</span>
+                        </span>                    
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/hansker-med-kompresjon?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/7995-m/handsker-med-kompression-1-par-.jpg" alt="Hansker med kompresjon - 1 par.">
+                        <span class="salePercentFlag">20%</span>
+                      </a>
+                      <div class="item-des">
+                        <p class="carousel-prodheader">
+                          <a href="/p/hansker-med-kompresjon?catid=132">Hansker med kompresjon - 1 par.</a>
+                        </p>
+                        <div class="item-description">Reduserer muskelsmerter, gikt, hovne og st..</div>
+                        <span class="prices">
+                          <span class="striked">149,95</span>
+                          <span class="offerprice">119,95 kr</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>            
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/kobber-kompressor-hansker?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/6827-m/kobber-kompressions-handsker-1-par-.jpg" alt="Kobber kompressor hansker - 1 par.">
+                      </a>
+                      <div class="item-des">
+                          <p class="carousel-prodheader">
+                            <a href="/p/kobber-kompressor-hansker?catid=132">Kobber kompressor hansker - 1 par.</a>
+                          </p>
+                        <div class="item-description">Til ømme, hovne og stive giktfingre.</div>
+                        <span class="prices">
+                          <span class="normalprice">129,95 kr</span>
+                        </span>                    
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item1 grid-item">
+                    <div class="item-inner">
+                      <a href="/p/hansker-med-kompresjon?catid=132">
+                        <img class="carousel-product-img" src="https://www.shop4body.dk/billeder/7995-m/handsker-med-kompression-1-par-.jpg" alt="Hansker med kompresjon - 1 par.">
+                        <span class="salePercentFlag">20%</span>
+                      </a>
+                      <div class="item-des">
+                        <p class="carousel-prodheader">
+                          <a href="/p/hansker-med-kompresjon?catid=132">Hansker med kompresjon - 1 par.</a>
+                        </p>
+                        <div class="item-description">Reduserer muskelsmerter, gikt, hovne og st..</div>
+                        <span class="prices">
+                          <span class="striked">149,95</span>
+                          <span class="offerprice">119,95 kr</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>            
+                  
+                  
+                  
+                  
+                  
+                  
+                <div class="clear"></div>
+                
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="newsletter-container">
+            <h3>Meld deg p&#xE5; v&#xE5;rt nyhetsbrev</h3>
+            <p>Ja, jeg vil gjerne motta nyhetsbrev fra Shop4body med gode tilbud og informasjon om nye produkter gjennom e-post.</p>
+            <p>Jeg kan n&#xE5;r som helst trekke tilbake samtykket mitt og avslutte abonnementet.</p>
+
+            <form class="newsletter-form" method="post" action="/front/newsletter/savemember">
+                <div class="newsletter-container-input-area"><input name="email" id="email" type="email" placeholder="Din e-mail adresse" required="required" /></div>
+                <div class="btns"><button id="newslettersubscribe" class="my-btn" name="btn" value="Tilmeld">Tilmeld</button></div>
+
+            </form>
+        </div>
+        <div class="block block-inf-eu-cookie block-cookie-disclaimer block-inf-eu-cookie-cookie-disclaimer even block-without-title" id="block-inf-eu-cookie-cookie-disclaimer">
+            <div class="block-inner clearfix">
+                <div class="content clearfix">
+                    <div class="disclaimer-content">Dette nettstedet bruker informasjonskapsler for &#xE5; huske dine innstillinger, statistikk og m&#xE5;lrettingsannonser. <div class="closer"><a id="cookie_disclaimer_closer" href="#">OK</a></div> <a href="/cookies.aspx" class="cookie-info-link">Les mer her.</a></div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer-container">
+            <div class="footerv2">
+                <div class="blockb2">
+                    <h4>Snarveier</h4>
+                    <p class="ads22">
+                        <a rel="nofollow" href="/freight.aspx" title="Frakt">Frakt</a>
+                        <br />
+                        <a rel="nofollow" href="/contact.aspx" title="Kontakt oss">Kontakt oss</a>
+                        <br />
+                        <a rel="nofollow" href="/terms.aspx" title="Handelsbetingelser">Handelsbetingelser</a>
+                        <br />
+                        <a rel="nofollow" href="/cookies.aspx" title="Cookies">Cookies</a>
+                    </p>
+                </div>
+                <div class="blockb2">
+                    <h4>Kundeservice</h4>
+                    <p class="ads22">
+                        <i class="fa fa-envelope"></i> info@shop4body.no
+                    </p>
+                </div>
+                <div class="blockb2">
+                    <h4>F&#xF8;lg oss</h4>
+                    <p class="ads22">
+                        <a href="https://www.facebook.com/Shop4bodyNorge/"><i class="fa fa-facebook-official" style="font-size:40px;"></i></a>
+                    </p>
+                </div>
+                <div class="blockb2">
+                    <h4>Betaling</h4>
+                    <p class="ads22">
+                        <img src="/images/icons/shop4bodyno/payoptions.png" />
+                    </p>
+                </div>
+                <div class="clear"></div>
+                <div id="copyright-wrapper">
+                    <div id="copyright-container">
+                        ©2022 Shop4body.no
+
+                        - Fabriksparken 13,
+                        9230 Svenstrup J, Danmark
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./Shop4body.dk_files/jquery.autocomplete.min.js.download"></script>
+    <script src="./Shop4body.dk_files/suggestionsearch.js.download"></script>
+    <script src="./Shop4body.dk_files/login.js.download"></script>
+    <script src="./Shop4body.dk_files/bootstrap.min.js.download"></script>
+    <script src="./Shop4body.dk_files/jquery.cookie.js.download"></script>
+    <script src="./Shop4body.dk_files/facebox.js.download"></script>
+    <script src="./Shop4body.dk_files/eucookie.js.download"></script>
+    <!-- <script src="./Shop4body.dk_files/globalscript.js.download"></script> -->
+    <script src="js/main.min.js"></script>
+    
+
+
+<!-- Visual Studio Browser Link -->
+<script type="text/javascript" src="./Shop4body.dk_files/browserLink" async="async" id="__browserLink_initializationData" data-requestid="800e91dba4c944b393ca64c4c084aee3" data-requestmappingfromserver="False"></script>
+<!-- End Browser Link -->
+
+<script src="./Shop4body.dk_files/aspnetcore-browser-refresh.js.download"></script>
+       <div class="autocomplete-suggestions" style="position: absolute; display: none; max-height: 300px; z-index: 9999;"></div></body></html>

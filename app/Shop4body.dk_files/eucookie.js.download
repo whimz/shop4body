@@ -1,0 +1,11 @@
+﻿$(function () {
+    var cookie_status = $.cookie("eu_cookie_compliance");
+    if (cookie_status != 'shown') {
+        $('#block-inf-eu-cookie-cookie-disclaimer').show();
+        $.cookie("eu_cookie_compliance", 'shown', { expires: 100 });
+    }
+    $('#cookie_disclaimer_closer').click(function () {
+        $('#block-inf-eu-cookie-cookie-disclaimer').hide();
+        $.cookie("eu_cookie_compliance", 'shown', { expires: 100 });
+    });
+});

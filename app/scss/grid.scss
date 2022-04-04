@@ -1,7 +1,11 @@
 $item-margin-20: 20px;
 $grid-margin-20: -20px;
+
 $item-margin-10: 10px;
 $grid-margin-10: -10px;
+
+$item-margin-5: 2.5px;
+$grid-margin-5: 2.5px;
 
 //-- items with 20px side margins
 @function itemWidth-10($qty){
@@ -15,13 +19,57 @@ $grid-margin-10: -10px;
   @return $result;
 }
 
+//-- items with 5px side margins
+@function itemWidth-5($qty){
+  $result: calc((100% - 2 * #{$item-margin-5} * #{$qty} ) / #{$qty});
+  @return $result;
+}
+
+
+.item1{
+  float: none!important;
+}
+
 .grid{
-  display: flex;
+  display: flex!important;
   flex-flow: row wrap;
   align-items: flex-start;
   justify-content: flex-start;
-  margin: 0 $grid-margin-20;
+  margin: 0 $grid-margin-5;
   overflow: hidden;
+
+  .grid-item{
+    position: relative;
+    margin-right: $item-margin-5;
+    margin-left: $item-margin-5;
+    width: itemWidth-5(6);
+    margin-bottom: 25px;
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: 1640px){
+    .grid-item{
+      width: itemWidth-5(5);
+    } 
+  }
+
+  @media screen and (max-width: 1440px){
+    .grid-item{
+      width: itemWidth-5(4);
+    } 
+  }
+
+  @media screen and (max-width: 980px){
+    .grid-item{
+      width: itemWidth-5(3);
+    } 
+  }
+
+  @media screen and (max-width: 640px){
+    .grid-item{
+      width: itemWidth-5(2);
+    } 
+  }
 
   &-5{
     .grid-item{
@@ -46,14 +94,6 @@ $grid-margin-10: -10px;
     
 }
   
-.grid-item{
-  position: relative;
-  margin-right: $item-margin-20;
-  margin-left: $item-margin-20;
-  margin-bottom: 3.5rem;
-  overflow: hidden;
-}
-
 @media screen and (max-width: 1024px){
   .grid-5{
     .grid-item{
