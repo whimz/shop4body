@@ -1,0 +1,125 @@
+﻿.desktop-breadcrumb {
+}
+
+@media (max-width: 991px) {
+    .desktop-breadcrumb {
+        display: none !important
+    }
+}
+
+.mobile-breadcrumb {
+    padding: 5px 0;
+    margin-bottom: 5px;
+    font-weight: bold
+}
+
+@media (min-width: 992px) {
+    .mobile-breadcrumb {
+        display: none !important
+    }
+}
+
+.content_cirlebox_main {
+    display: block;
+    text-align: center;
+    padding: 40px 0 20px;
+}
+
+.content_cirlebox {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.content_cirlebox li {
+    display: inline-block;
+    padding: 0 30px;
+    background: url(../../../images/icons/nav_bg.png) center 15px repeat-x;
+    float: left;
+    position: relative;
+}
+
+.content_cirlebox li.activate:after {
+}
+
+.content_cirlebox li i {
+    border-radius: 25px;
+    display: inline-block;
+    font-style: normal;
+    height: 35px;
+    line-height: 35px;
+    width: 35px;
+}
+
+.content_cirlebox li span {
+    display: block;
+    padding-top: 10px;
+}
+
+.content_cirlebox li:last-child {
+    padding-right: 0;
+    text-align: right;
+    padding-left: 10px;
+}
+
+.content_cirlebox li:last-child i {
+    text-align: center;
+}
+
+.content_cirlebox li:last-child span {
+    position: relative;
+    left: 10px;
+}
+
+.content_cirlebox li:first-child {
+    padding-left: 0;
+}
+
+.content_cirlebox .step_done {
+    background: #f3f3f3;
+}
+
+.content_cirlebox .step_current {
+    background: #bebebe;
+    color: #fff;
+}
+
+@media(max-width:767px) {
+    .content_cirlebox_main {
+        text-align: left;
+        padding: 30px 0 0 0;
+    }
+
+    .content_cirlebox {
+        display: block;
+        text-align: left;
+    }
+
+    .content_cirlebox li {
+        width: 100%;
+        float: left;
+        background: none;
+        font-size: 20px;
+        padding: 0 !important;
+    }
+
+    .content_cirlebox li span {
+        display: inline-block;
+        padding-left: 10px;
+    }
+
+    .content_cirlebox li i {
+        text-align: center;
+    }
+
+    .content_cirlebox li:last-child {
+        text-align: left;
+    }
+
+    .content_cirlebox li:last-child span {
+        position: relative;
+        left: 0;
+    }
+}

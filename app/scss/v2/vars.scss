@@ -1,0 +1,56 @@
+﻿@mixin respond ($breakpoint) {
+    // $breakpoint is simply a variable that can have several values
+
+    @if $breakpoint==tablet {
+        // here `laptop` is the value of $breakpoint
+        // when call laptop, we mean the following piece of code
+
+        @media only screen and (max-width: 767px) {
+            @content;
+        }
+    }
+    //@if $breakpoint==mobile {
+    //  @media only screen and (max-width: 480px) {
+    //    @content;
+    //  }
+    // }
+}
+
+@mixin svg-icon($path, $color) {
+    background-image: url("data:image/svg+xml,%3Csvg width='50' height='24' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg' fill='%23" + $color + "'%3E%3Cpath d='" + $path + "'/%3E%3C/svg%3E");
+    width: 50px;
+    height: 24px;
+}
+
+$colors: ( primary: #333333, primaryHover: #158cf3, heading: #000, btnPrimary: #85c96f, btnHoverPrimary: #79df58, inActive: #9a9fad, discountRegular: #eb595e, discountVolume: #5fc957, link: #337ab7, linkHover: #1d90f3 );
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+$fontSizes: ( primary: 14px, heading: 2em, pricing: 14px );
+
+@function fontSize($fontSize) {
+    @return map-get($fontSizes, $fontSize)
+}
+
+$checkoutBackgroundColor: #f5f5f5;
+
+$panelBackgroundColor: #fff;
+$panelBorderColor: #e5e5e5;
+
+$fontSizeHeading: 2em;
+$fontSizePricing: 14px;
+
+$fontColorBtn: #85c96f;
+$fontColorStandard: #333333;
+$fontColorHover: #95d97f;
+$fontColorHeading: #000;
+$fontColorGrayed: #9a9fad;
+$fontColorRegularDiscount: #eb595e;
+$fontColorVolumeDiscount: #5fc957;
+
+$fontWeightLight: 300;
+$fontWeightNormal: 400;
+$fontWeightSemibold: 500;
+$fontWeightBold: 700;

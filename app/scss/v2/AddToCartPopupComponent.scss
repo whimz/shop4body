@@ -1,0 +1,149 @@
+﻿.addBasketPopup .btn {
+    display: block;
+    width: 100%;
+}
+
+.addBasketPopup {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 125px 60px auto auto;
+    //grid-template-rows: 50px 125px 60px auto auto;
+    grid-template-areas: "img img prod prod prod prod prod prod price price price price" "buttonleft buttonleft buttonleft buttonleft buttonleft buttonleft buttonright buttonright buttonright buttonright buttonright buttonright" "head2 head2 head2 head2 head2 head2 head2 head2 head2 head2 head2 head2" "ccont ccont ccont ccont ccont ccont ccont ccont ccont ccont ccont ccont";
+    //grid-template-areas: "head head head head head head head head head head head close" "img img prod prod prod prod prod prod price price price price" "buttonleft buttonleft buttonleft buttonleft buttonleft buttonleft buttonright buttonright buttonright buttonright buttonright buttonright" "head2 head2 head2 head2 head2 head2 head2 head2 head2 head2 head2 head2" "ccont ccont ccont ccont ccont ccont ccont ccont ccont ccont ccont ccont";
+}
+
+@media only screen and (max-width: 990px) {
+    .addBasketPopup {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 125px 55px auto auto;
+        //grid-template-rows: 50px 125px 55px auto auto;
+        grid-template-areas: "img img prod prod prod prod prod prod prod price price price" "buttonleft buttonleft buttonleft buttonleft buttonleft buttonleft buttonleft buttonleft buttonleft buttonleft buttonleft buttonleft" "buttonright buttonright buttonright buttonright buttonright buttonright buttonright buttonright buttonright buttonright buttonright buttonright" "head2 head2 head2 head2 head2 head2 head2 head2 head2 head2 head2 head2" "ccont ccont ccont ccont ccont ccont ccont ccont ccont ccont ccont ccont";
+        //grid-template-areas: "head head head head head head head head head head head close" "img img prod prod prod prod prod prod prod price price price" "buttonleft buttonleft buttonleft buttonleft buttonleft buttonleft buttonleft buttonleft buttonleft buttonleft buttonleft buttonleft" "buttonright buttonright buttonright buttonright buttonright buttonright buttonright buttonright buttonright buttonright buttonright buttonright" "head2 head2 head2 head2 head2 head2 head2 head2 head2 head2 head2 head2" "ccont ccont ccont ccont ccont ccont ccont ccont ccont ccont ccont ccont";
+    }
+
+    .addBasketPopup-buttonright {
+        padding-top: 0px !important;
+        margin-top: 12px;
+    }
+
+  
+}
+
+.addBasketPopup-wrapper {
+    display: contents;
+}
+
+
+.addBasketPopup-title {
+    grid-area: head;
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    background-color: #f3f3f3;
+}
+
+.addBasketPopup-close {
+    grid-area: close;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #eee;
+    background-color: #f3f3f3;
+}
+
+#closeAddBasketPopup {
+    cursor: pointer;
+}
+
+.addBasketPopup-productarea-img {
+    grid-area: img;
+    align-self: center;
+}
+
+.addBasketPopup-productarea-text {
+    grid-area: prod;
+    align-self: center;
+}
+
+.addBasketPopup-productarea-price {
+    grid-area: price;
+    align-self: center;
+    font-size: 19px;
+    text-align: end;
+    padding-right: 10px;
+}
+
+.addBasketPopup-buttonleft {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    grid-area: buttonleft;
+}
+
+.addBasketPopup-buttonleft a {
+    color: #000;
+}
+
+.addBasketPopup-buttonright {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    grid-area: buttonright;
+}
+
+.addBasketPopup-customersWhoBought-title {
+    grid-area: head2;
+    padding-left: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    align-self: center;
+    padding-top: 18px;
+}
+
+.addBasketPopup-customersWhoBought-content {
+    grid-area: ccont;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 18px;
+}
+
+.addBasketPopup-oldPrice {
+    text-decoration: line-through;
+    color: #7c7c7c;
+}
+
+.addBasketPopup-price {
+    color: #000;
+    font-weight: 600;
+}
+
+.addBasketPopup-volumeDiscount {
+}
+
+.addBasketPopup-volumeDiscountText {
+    border: 1px solid #55c65e;
+    border-radius: 4px;
+    background-color: #55c65e;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+.addBasketPopup-price-percentageSaved {
+    font-size: 1.3rem;
+    font-weight: 400;
+    align-self: end;
+}
+
+.addBasketPopup-price-percentageSavedCircle {
+    background-color: #f35164;
+    color: #fff;
+    border-radius: 100%;
+    line-height: 40px;
+    border: 1px solid #f35164;
+    padding: 5px;
+}

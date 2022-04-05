@@ -1,0 +1,42 @@
+﻿.top-banner {
+    overflow: hidden;
+    position: relative;
+    margin-top: -18px;
+    width: 100%;
+    height: 100px;
+    background: #a31e19;
+}
+
+@media(min-width: 61.25em) {
+    .top-banner {
+        display: block;
+        height: 150px;
+    }
+}
+
+.top-banner picture {
+    position: absolute;
+    left: 50%;
+    width: calc(100% + 24px);
+    margin-left: -240px;
+}
+
+@media(min-width: 61.25em) {
+    .top-banner picture {
+        margin-left:-12px;
+        width: auto;
+        margin-left: -960px;
+    }
+}
+
+.top-banner img {
+    display: block;
+    height: 100px;
+}
+
+@media(min-width: 61.25em) {
+    .top-banner img {
+        height:150px;
+        width: 1396px;
+    }
+}

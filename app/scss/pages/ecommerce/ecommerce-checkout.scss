@@ -1,0 +1,32 @@
+﻿.ci-item-active {
+    border: 1px solid #00c6ff;
+    background-color: rgba(0, 198, 255, .05);
+}
+
+.ci-item-header {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 24px;
+}
+
+.ci-item-active .ci-logo {
+    max-width: 125px;
+    max-height: 40px;
+    border-radius: 3px;
+}
+
+.ci-detailed-information {
+    padding: 10px;
+    margin-right: auto;
+}
+
+.ci-item-active .ci-detailed-information .ci-heading {
+    font-size: 2.1rem;
+    font-weight: 500;
+}
+
+.ci-item-active .ci-detailed-information .ci-subheading {
+    color: #8d92a0;
+}

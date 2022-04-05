@@ -1,0 +1,49 @@
+﻿/// <reference path="vars.scss" />
+
+.frm-group-danger-text {
+    color: #a94442;
+}
+
+.frm-group {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 0 !important;
+    flex-flow: column nowrap;
+}
+
+.frm-group a {
+    color: #337ab7;
+}
+
+.frm-group a:hover {
+    color: #158cf3;
+    text-decoration: underline;
+}
+
+
+.frm-group ul {
+    list-style: none;
+    padding: 0;
+}
+
+.frm-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.frm-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
+}

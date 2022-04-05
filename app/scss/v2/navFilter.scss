@@ -1,0 +1,104 @@
+﻿/// <reference path="vars.scss" />
+/*#nav-filter-mobile {
+    display: none;
+
+    @include respond(tablet) {
+        display: block !important;
+    }
+}*/
+
+.nav-filter {
+    color: #777;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: 250px 250px;
+
+    &-item-dropdown {
+        text-decoration: none;
+        color: #777;
+
+        .arrow.up {
+            vertical-align: bottom;
+        }
+
+        .arrow.down {
+            vertical-align: top;
+        }
+    }
+
+    &-item-dropdown.active {
+    }
+
+    &-item-dropdown.active i:first-child {
+        display: none;
+    }
+
+    &-item-dropdown.active i:last-child {
+        display: inline-block;
+    }
+
+    &-item-dropdown i:first-child {
+        display: inline-block;
+    }
+
+    &-item-dropdown i:last-child {
+        display: none;
+    }
+
+    &-item {
+        position: relative;
+        display: inline-block;
+    }
+
+    &-dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        width: 100%;
+        min-width: 160px;
+        z-index: 1;
+        border: 1px solid #c9c9c9;
+
+        &-active {
+            font-weight: 700;
+        }
+
+        & a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        & a:hover {
+        }
+
+        &.active {
+            display: block;
+            top: 23px;
+            left: -8px;
+        }
+
+        & ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        & > ul > li {
+            padding-left: 15px;
+            padding: 15px;
+        }
+
+        & > ul > ul > li {
+            padding-left: 25px !important;
+            padding: 15px;
+        }
+
+        & ul li:hover {
+            background-color: #f4eddd;
+        }
+    }
+}

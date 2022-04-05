@@ -9,11 +9,11 @@ const uglify       = require('gulp-uglify-es').default;
 const browsersync  = require('browser-sync').create();
 
 function styles(){
-  return src('app/scss/style.scss')
+  return src('app/scss/application.scss')
     .pipe(sourcemaps.init())
-    .pipe(scss({outputStyle: 'expanded'}))
+    .pipe(scss({outputStyle: 'compressed'}))
     .pipe(autoprefixer(['last 15 versions', '< 1%', 'ie 10']))
-    .pipe(concat('style.min.css'))
+    .pipe(concat('application.min.css'))
     .pipe(sourcemaps.write(''))
     .pipe(dest('app/css'))
     .pipe(browsersync.stream()); 

@@ -1,0 +1,21 @@
+﻿.form-group.required .control-label:after {
+    content: "*";
+    color: red;
+}
+
+#txtPhone input::-webkit-outer-spin-button,
+#txtPhone input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+
+.banktransferagreementlayout {
+    overflow: auto;
+    padding: 20px;
+    background-color: #fbfbfb;
+    border: 1px solid #b6b6b6;
+    line-height: 1.4;
+    border-radius: 5px;
+}

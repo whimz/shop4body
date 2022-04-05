@@ -1,0 +1,153 @@
+﻿/// <reference path="vars.scss" />
+
+.best-seller {
+    background: #b0bfa1;
+    padding: 2rem 15rem;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.best-seller__title {
+    text-align: center;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+.best-seller__title:before,
+.best-seller__title:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.best-seller__title:before {
+    right: 0.5rem;
+    margin-left: -50%;
+}
+
+.best-seller__title:after {
+    left: 0.5rem;
+    margin-right: -50%;
+}
+
+.best-seller__title span {
+    font-size: 20px;
+}
+
+
+.blogs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.blog {
+    flex-basis: calc(33.33% - 2rem);
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.blog-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.blog-img-wrapper {
+    display: inline-block;
+}
+
+.blog__img {
+    width: 100%;
+}
+
+.blog img {
+    width: 489px;
+    height: 323px;
+}
+
+.blog img:hover {
+    box-shadow: 0 15px 35px rgb(0 0 0 / 12%), 0 5px 15px rgb(0 0 0 / 10%), 0 0 3px rgb(22 7 7 / 10%);
+    transform: translateY(-6px);
+}
+
+.blog__writer {
+    text-transform: uppercase;
+    color: #2a525f;
+    font-weight: 700;
+}
+
+.blog__title {
+    margin: 0;
+}
+
+.blog__description {
+    margin: 2rem 0;
+}
+
+.blog-btn-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex: 1;
+}
+
+.blog__btn {
+    padding: .5rem 5rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.blog__btn:hover {
+    background-color: #000;
+    color: #b0bfa1;
+}
+
+@media screen and (max-width: 992px) {
+    .best-seller {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .best-seller {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .best-seller {
+        padding: 1rem;
+    }
+
+    .best-seller__title span {
+        font-size: 16px;
+    }
+
+    .blogs {
+        gap: 1rem;
+    }
+
+    .blog:first-child {
+        flex: 100%;
+    }
+
+    .blog:not(:first-child) {
+        flex-basis: calc(50% - 1rem);
+    }
+
+    .blog__btn {
+        padding: .5rem 2rem;
+    }
+    .best-seller__title hr {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}

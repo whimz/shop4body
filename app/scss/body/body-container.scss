@@ -1,0 +1,26 @@
+﻿.body-container {
+/*    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    min-height: 100vh;*/
+    padding: 18px 12px;
+}
+
+@media(max-width:1024px) {
+    .body-container {
+        width: 100%;
+        display: block;
+    }
+}
+
+.content-box {
+    /*width: 1170px;
+    margin: 10px auto;
+    min-height: 500px;*/
+    padding: 0px 10px 0px 10px;
+    min-height: 100vh;
+}

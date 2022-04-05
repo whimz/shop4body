@@ -1,0 +1,35 @@
+﻿.body-breadcrumb {
+    display: none;
+}
+
+.body-breadcrumb ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.body-breadcrumb ul li {
+    display: inline-block;
+    margin-right: 2px;
+    font-size: .8em;
+    color: #a9adb7;
+    line-height: 40px;
+}
+
+.body-breadcrumb li:not(:last-child):after {
+    margin: 0 2px 0 5px;
+    content: "\003e";
+    position: relative;
+    top: -1px;
+}
+
+
+.body-breadcrumb {
+    position: relative;
+    display: -ms-flexbox;
+    display: block;
+    -ms-flex-align: center;
+    -ms-flex-pack: justify;
+    text-transform: uppercase;
+    margin-top: -12px;
+}

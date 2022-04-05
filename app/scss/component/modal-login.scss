@@ -1,0 +1,107 @@
+﻿.modal-content .button,
+.external-auth .button {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+    padding: 10px 18px;
+    cursor: pointer;
+    text-align: center;
+    transition: border-color .1s,box-shadow .1s;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+
+.button_facebook {
+    background-color: #4b70b0;
+    box-shadow: inset 0 1px 0 hsla(0,0%,98.8%,.2), 0 1px 1px rgba(0,0,0,.1);
+    border-color: #3e4d6d #2a3959 #2a3959;
+    color: #fff;
+    background-image: linear-gradient(to bottom left,#4b70b0,#3c5b9a);
+}
+
+.login-popup_divider {
+    position: relative;
+    outline: 0;
+    border: 0;
+    text-align: center;
+    opacity: .5;
+    margin: 12px 0;
+    height: 15px;
+}
+
+.login-popup_divider:before {
+    content: "";
+    background: linear-gradient(90deg,transparent,#818078,transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+}
+
+.login-popup_divider:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    padding: 0 12px;
+    background: #fff;
+}
+
+.login-popup_input {
+    margin-bottom: 12px;
+}
+
+.login-popup_input .label, .login-popup_input label {
+    margin-bottom: 3px;
+    color: #5b5f6c;
+    display: block;
+    width: 100%;
+    font-weight: 600;
+}
+
+.login-popup_register
+{
+    text-align:left;
+}
+.login-popup_register ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.login-popup_register ul li {
+    margin-bottom: 5px;
+}
+
+    .button--block {
+        display: block;
+        width: 100%;
+    }
+
+    .button--primary {
+        background-color: #47bb49;
+        border-color: #27ba29;
+        color: #fff;
+    }
+
+    .button--link {
+        background: none;
+        border-color: transparent;
+        color: #51a1e6;
+        text-decoration: underline;
+    }
+
+    .link, .link a {
+        font-size: inherit;
+        color: #51a1e6;
+        text-decoration: underline;
+    }
+
+    .no-link {
+        color: inherit !important;
+        text-decoration: none !important;
+    }

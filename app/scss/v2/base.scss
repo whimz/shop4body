@@ -1,0 +1,88 @@
+﻿/// <reference path="vars.scss" />
+
+body {
+    /*    overflow: hidden;
+    font-size: 14px;
+    margin: 0;*/
+    font-family: 'Inter', sans-serif;
+    font-size: fontSize(primary);
+    line-height: normal !important;
+}
+
+header {
+    background-color: #fff !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a:link {
+    color: color(primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: color(primaryHover);
+    text-decoration: none;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.btn a {
+    color: #ffffff !important;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+.banner-container img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.width-1200, .width-1200px {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.width-1600, .width-1600px {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}

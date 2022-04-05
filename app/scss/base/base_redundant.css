@@ -1,0 +1,63 @@
+﻿a, address, article, b, big, body, center, code, dd, del, details, div, dl, embed, fieldset, figure, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, iframe, img, label, legend, li, mark, menu, nav,
+object, ol, output, p, pre, q, s, section, small, span, strike, sub, summary, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  /*margin: 0;
+    padding: 0;
+    border: 0;*/
+  /*font-size: 100%;
+    font: inherit;*/
+  /*vertical-align: baseline;*/ }
+
+/*body {
+    font: 100% $font-stack;
+    color: $primary-color;
+}*/
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 0;
+  margin-bottom: 10px; }
+
+body {
+  font-family: open sans,Arial,sans-serif; }
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  /* background-color: #FAF8F9; */ }
+
+.clear {
+  clear: both; }
+
+a:hover {
+  opacity: 0.8; }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%; }
+
+.btn a {
+  color: #ffffff; }
+
+::-webkit-scrollbar {
+  width: 7px; }
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }
+
+.width-1200 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+
+ol, ul {
+  /*list-style: none;*/ }

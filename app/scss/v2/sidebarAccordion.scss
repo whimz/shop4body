@@ -1,0 +1,75 @@
+﻿/// <reference path="vars.scss" />
+
+
+.body-sidebar {
+    display: block;
+
+    @include respond(tablet) {
+        display: none !important;
+    }
+}
+
+
+
+.sidebar-accordion {
+    -webkit-box-shadow: 0 15px 35px rgb(0 0 0 / 4%), 0 5px 15px rgb(0 0 0 / 5%), 0 0 3px rgb(0 0 0 / 5%);
+    box-shadow: 0 15px 35px rgb(0 0 0 / 4%), 0 5px 15px rgb(0 0 0 / 5%), 0 0 3px rgb(0 0 0 / 5%);
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    display: block;
+
+    & ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    & .pagenav {
+        position: relative;
+        margin-bottom: 10px;
+        list-style: none;
+    }
+
+    & .pagenav a {
+        text-decoration: none;
+        color: #323232;
+        cursor: pointer;
+    }
+
+    & .pagenav ul {
+        display: none; /* hides all ul content by default (see exceptions in JS) */
+        padding: 15px;
+        margin: 0;
+    }
+
+    & .pagenav li {
+        margin-bottom: 3px;
+        list-style: none;
+    }
+
+    & .pagenav h4 {
+        font-size: 14px;
+        margin: 0;
+        font-weight: normal;
+    }
+
+    & .pagenav h4 i {
+        font-size: 24px;
+        position: absolute;
+        right: 30px;
+        line-height: 20px;
+        transition: 0.2s;
+        -webkit-transition: 0.2s;
+        -ms-transition: 0.2s;
+        cursor: pointer;
+    }
+
+    & .pagenav.open h4 i.arrow {
+        transform: rotate(45deg);
+    }
+
+    & a:hover,
+    & .pagenav .current_page_item a {
+        font-weight: bold;
+    }
+}

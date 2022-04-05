@@ -1,0 +1,57 @@
+﻿.navbar-toggle:before {
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar-default {
+    background-color: #fff;
+    background-image: none;
+    background-repeat: no-repeat;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    color: #93d07f;
+    font-weight: 700;
+    background: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.glyphicon-menu-hamburger {
+    font-size: 24px;
+    float: left;
+}
+
+.nav-quick-links {
+    margin-bottom: 18px;
+}
+
+.nav-quick-links li {
+    padding: 12px 0;
+}
+
+.nav-quick-links li:first-child {
+    border-top: 1px solid #e5e5e5;
+}
+
+.nav-quick-links li {
+    /*display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #e5e5e5;*/
+}
+
+.nav-quick-links li a {
+    color: #777;
+}
+
+@media (min-width: 768px) {
+    .nav-quick-links {
+        display: none;
+    }
+}

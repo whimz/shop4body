@@ -1,0 +1,51 @@
+﻿#block-inf-eu-cookie-cookie-disclaimer .block-inner {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 10px 10px
+}
+
+#block-inf-eu-cookie-cookie-disclaimer {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e5e5e5;
+    color: #000;
+}
+
+#block-inf-eu-cookie-cookie-disclaimer .block-inner .disclaimer-content {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.25;
+    float: left;
+}
+
+#block-inf-eu-cookie-cookie-disclaimer .block-inner .content a {
+    color: #000;
+}
+
+#block-inf-eu-cookie-cookie-disclaimer .block-inner .cookie-info-link {
+    text-decoration: underline
+}
+
+#block-inf-eu-cookie-cookie-disclaimer .block-inner .closer {
+    float: right;
+    text-align: right;
+    margin-left: 20px
+}
+
+#block-inf-eu-cookie-cookie-disclaimer .block-inner #cookie_disclaimer_closer {
+    border: solid 1px #333;
+    background: #333;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 3px 10px;
+    text-align: center;
+    display: inline-block;
+    opacity: .95;
+    color: #fff;
+}

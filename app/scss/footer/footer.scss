@@ -1,0 +1,144 @@
+﻿footer.footer-container {
+    background-color: #fcfcfc;
+}
+
+.footerv2 {
+    margin: 0 auto;
+    width: 1000px;
+    display: block;
+}
+
+@media (max-width: 61.24em) {
+    .footerv2 {
+        width: 100%;
+        text-align: center;
+    }
+} 
+
+.footerv2 .fa {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.footerv2 h4 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.blockb2 {
+    width: 25%;
+    float: left;
+    padding: 20px 15px;
+}
+
+@media (max-width: 61.24em) {
+    .blockb2 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/*.footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+
+}
+
+.footer-wrapper {
+    padding: 30px 0;
+}
+
+.footer .fa {
+    float: left;
+    margin-right: 4px;
+}
+
+.footer-accepted-cards {
+    margin-top: 5px;
+}
+
+
+.footer-bottom {
+    margin: 0 auto;
+    width: 1000px;
+    display: block;
+}
+
+.fcol {
+    width: 33%;
+    float: left;
+}
+
+.footer-col {
+    margin-right: 20px;
+}
+
+.footer-col h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.footer-col a {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #3e3e3e;
+}*/
+
+#copyright-wrapper {
+    margin: 0 auto;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    width: 1000px;
+    color: #bbb;
+    text-align: center;
+    text-shadow: 0 1px #fff;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+#copyright-container {
+    margin: 0 auto;
+    width: 700px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 61.24em) {
+
+    /*.footer-bottom {
+        width: 100%;
+        text-align: center;
+    }
+
+    .fcol {
+        width: 100%;
+        float:none;
+    }
+
+    .footer-col {
+        margin-right: 0;
+        display: inline-block;
+        text-align: left;
+    }
+
+    #fcol-cat1 {
+        display:none;
+    }
+
+    #fcol-cat2 {
+        display: none;
+    }*/
+
+    #copyright-wrapper {
+        width: 100%;
+        height: 0;
+        display: none;
+    }
+}
