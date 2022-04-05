@@ -399,7 +399,7 @@
 
     @include respond(tablet) {
         position: relative;
-        z-index: 9999;
+        z-index: 200;
 
         .navibar-header-text {
             font-size: 9px;

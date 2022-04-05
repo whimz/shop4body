@@ -15,9 +15,11 @@
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     overflow-y: auto;
     background-color: rgba(0,0,0,0.25);
-    z-index: 15;
+    z-index: 201;
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s ease-in-out;

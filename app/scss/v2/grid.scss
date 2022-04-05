@@ -25,11 +25,6 @@ $grid-margin-5: -2.5px;
   @return $result;
 }
 
-
-.item1{
-  float: none!important;
-}
-
 .grid{
   display: flex!important;
   flex-flow: row wrap;

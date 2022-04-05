@@ -1,9 +1,10 @@
 ﻿/// <reference path="vars.scss" />
 
+html, body {
+    margin: 0;
+}
+
 body {
-    /*    overflow: hidden;
-    font-size: 14px;
-    margin: 0;*/
     font-family: 'Inter', sans-serif;
     font-size: fontSize(primary);
     line-height: normal !important;
