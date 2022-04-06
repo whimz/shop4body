@@ -36,6 +36,7 @@
 
 .product-carasoul {
     margin-left: 24px;
+    flex-basis: calc(100% - 250px);
 }
 
 .product-carasoul h4 {
@@ -150,6 +151,19 @@
     text-decoration: none;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.product-carasoul{
+		flex-basis: calc(100% - 300px);
+		margin-left: auto;
+	}
+}
+
+@media only screen and (max-width: 980px){
+	.product-carasoul{
+		margin-left: 0;
+	}
+}
+
 @media(max-width:480px) {
     .add2cart-orange-bt {
         font-size: 26px;
@@ -162,6 +176,8 @@
         margin-left: 0px;
     }
 }
+
+
 
 .search-sorting select {
     padding: 0 15px 0 0;

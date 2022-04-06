@@ -3,6 +3,7 @@
 
 .body-sidebar {
     display: block;
+    width: 250px;
 }
 
 @media screen and (max-width: 980px) {
@@ -25,7 +26,6 @@
     box-shadow: 0 15px 35px rgb(0 0 0 / 4%), 0 5px 15px rgb(0 0 0 / 5%), 0 0 3px rgb(0 0 0 / 5%);
     padding: 12px;
     border-radius: 3px;
-    width: 250px;
     display: block;
 
     & ul {
