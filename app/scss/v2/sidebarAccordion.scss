@@ -3,10 +3,12 @@
 
 .body-sidebar {
     display: block;
+}
 
-    @include respond(tablet) {
+@media screen and (max-width: 980px) {
+    .body-sidebar{
         display: none !important;
-    }
+    }   
 }
 
 @supports (position: sticky){
@@ -80,3 +82,5 @@
         font-weight: bold;
     }
 }
+
+
