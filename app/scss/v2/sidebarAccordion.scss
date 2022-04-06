@@ -12,16 +12,9 @@
     }   
 }
 
-@supports (position: sticky){
-	@media screen and (min-width: 980px) {
-		.sidebar-accordion{
-			position: sticky;
-			top: 12px;
-		}
-	}
-}
-
 .sidebar-accordion {
+    position: sticky;
+    top: 12px;
     -webkit-box-shadow: 0 15px 35px rgb(0 0 0 / 4%), 0 5px 15px rgb(0 0 0 / 5%), 0 0 3px rgb(0 0 0 / 5%);
     box-shadow: 0 15px 35px rgb(0 0 0 / 4%), 0 5px 15px rgb(0 0 0 / 5%), 0 0 3px rgb(0 0 0 / 5%);
     padding: 12px;
