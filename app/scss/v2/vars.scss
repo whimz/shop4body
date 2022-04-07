@@ -22,6 +22,12 @@
     height: 24px;
 }
 
+@mixin svg-icon-fav($path, $color) {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg' fill='%23" + $color + "'%3E%3Cpath d='" + $path + "'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 $colors: ( primary: #333333, primaryHover: #158cf3, heading: #000, btnPrimary: #85c96f, btnHoverPrimary: #79df58, inActive: #9a9fad, discountRegular: #eb595e, discountVolume: #5fc957, link: #337ab7, linkHover: #1d90f3 );
 
 @function color($color-name) {
