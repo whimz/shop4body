@@ -1,4 +1,6 @@
-﻿.addBasketPopup .btn {
+﻿/// <reference path="vars.scss" />
+
+.addBasketPopup .btn {
     display: block;
     width: 100%;
 }
@@ -8,7 +10,7 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 125px 60px auto auto;
     //grid-template-rows: 50px 125px 60px auto auto;
-    grid-template-areas: "img img prod prod prod prod prod prod price price price price" "buttonleft buttonleft buttonleft buttonleft buttonleft buttonleft buttonright buttonright buttonright buttonright buttonright buttonright" "head2 head2 head2 head2 head2 head2 head2 head2 head2 head2 head2 head2" "ccont ccont ccont ccont ccont ccont ccont ccont ccont ccont ccont ccont";
+    grid-template-areas: "img img prod prod prod prod prod prod prod price price price" "buttonleft buttonleft buttonleft buttonleft buttonleft buttonleft buttonright buttonright buttonright buttonright buttonright buttonright" "head2 head2 head2 head2 head2 head2 head2 head2 head2 head2 head2 head2" "ccont ccont ccont ccont ccont ccont ccont ccont ccont ccont ccont ccont";
     //grid-template-areas: "head head head head head head head head head head head close" "img img prod prod prod prod prod prod price price price price" "buttonleft buttonleft buttonleft buttonleft buttonleft buttonleft buttonright buttonright buttonright buttonright buttonright buttonright" "head2 head2 head2 head2 head2 head2 head2 head2 head2 head2 head2 head2" "ccont ccont ccont ccont ccont ccont ccont ccont ccont ccont ccont ccont";
 }
 
@@ -70,10 +72,12 @@
 .addBasketPopup-productarea-price {
     grid-area: price;
     align-self: center;
-    font-size: 19px;
+    font-size: 14px;
     text-align: end;
     padding-right: 10px;
 }
+
+
 
 .addBasketPopup-buttonleft {
     padding-top: 10px;
@@ -112,11 +116,13 @@
 .addBasketPopup-oldPrice {
     text-decoration: line-through;
     color: #7c7c7c;
+    white-space: nowrap;
 }
 
 .addBasketPopup-price {
     color: #000;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .addBasketPopup-volumeDiscount {
@@ -134,16 +140,8 @@
 
 
 .addBasketPopup-price-percentageSaved {
-    font-size: 1.3rem;
+    font-size: 10px;
     font-weight: 400;
     align-self: end;
-}
-
-.addBasketPopup-price-percentageSavedCircle {
-    background-color: #f35164;
-    color: #fff;
-    border-radius: 100%;
-    line-height: 40px;
-    border: 1px solid #f35164;
-    padding: 5px;
+    color: $fontColorRegularDiscount;
 }

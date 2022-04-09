@@ -9,11 +9,11 @@
             @content;
         }
     }
-    //@if $breakpoint==mobile {
-    //  @media only screen and (max-width: 480px) {
-    //    @content;
-    //  }
-    // }
+    @if $breakpoint==bigtablet {
+      @media only screen and (max-width: 980px) {
+        @content;
+      }
+     }
 }
 
 @mixin svg-icon($path, $color) {

@@ -1,7 +1,7 @@
 ﻿/// <reference path="vars.scss" />
 
 .best-seller {
-    background: #b0bfa1;
+    background: #b5c3a7;
     padding: 2rem 15rem;
     text-align: center;
     padding-top: 30px;
@@ -38,11 +38,26 @@
     font-size: 20px;
 }
 
+.blog-post-cover-img {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 440px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .blog-post-cover-img {
+        border-radius: 6px;
+    }
+}
+
 
 .blogs {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    margin-top: 25px;
 }
 
 .blog {
@@ -68,7 +83,7 @@
 
 .blog img {
     width: 489px;
-    height: 323px;
+    height: auto;
 }
 
 .blog img:hover {
@@ -84,6 +99,7 @@
 
 .blog__title {
     margin: 0;
+    margin-top: 15px;
 }
 
 .blog__description {
