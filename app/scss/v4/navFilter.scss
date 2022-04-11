@@ -11,13 +11,15 @@
     color: #777;
     font-family: "Inter", sans-serif;
     font-size: 14px;
-    padding: 8px;
-    display: grid;
-    grid-template-columns: 250px 250px;
+    padding: 8px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
 
-    @include respond(tablet) {
+    /* @include respond(tablet) {
         grid-template-columns: 1fr 1fr;
-    }
+    } */
 
     &-item-dropdown {
         text-decoration: none;
@@ -53,7 +55,11 @@
 
     &-item {
         position: relative;
-        display: inline-block;
+        min-width: 120px;
+        margin-right: 12px;
+        padding: 16px;
+        border: 1px solid #777;
+        text-align: center;
     }
 
     &-dropdown-content {
