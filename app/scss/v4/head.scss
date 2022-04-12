@@ -514,11 +514,14 @@
 
             &.is-open {
                 /* transform: translateX(0);*/
-                width: 50%;
+                width: 90%;
             }
 
             .caret {
-                transform: rotate(-90deg);
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%) rotate(-90deg);
                 transition: all 0.2s;
             }
 
@@ -545,6 +548,9 @@
                     li {
                         display: block;
                         width: 100%;
+                        padding: 5px 0;
+                        border-bottom: 1px solid #e7e7e7;
+    
 
                         > a {
                             display: block;
