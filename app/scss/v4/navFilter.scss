@@ -22,6 +22,8 @@
     } */
 
     &-item-dropdown {
+        width: 100%;
+        line-height: 48px;
         text-decoration: none;
         color: #777;
 
@@ -55,9 +57,10 @@
 
     &-item {
         position: relative;
+        display: flex;
         min-width: 120px;
+        height: 48px;
         margin-right: 12px;
-        padding: 16px;
         border: 1px solid #777;
         text-align: center;
     }
