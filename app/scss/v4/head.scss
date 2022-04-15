@@ -663,6 +663,10 @@
 
                     > .dropdown-toggle-open + .dropdown-menu-open {
                         display: block;
+                        border: none;
+                        > li:last-child{
+                            border-bottom: none;
+                        }
                     }
 
                     > a {
