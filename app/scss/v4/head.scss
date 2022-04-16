@@ -690,6 +690,7 @@
         display: none;
 
         @include respond(tablet) {
+            margin-top: 3px;
             margin-bottom: 30px;
             display: block;
 
@@ -699,7 +700,9 @@
                 margin-top: 0;
 
                 li {
+                    padding-top: 10px;
                     padding-bottom: 10px;
+                    border-bottom: 1px solid #e7e7e7;
 
                     a {
                         color: #777;
