@@ -23,6 +23,7 @@
 
     &-item-dropdown {
         width: 100%;
+        padding: 0 16px;
         line-height: 48px;
         text-decoration: none;
         color: #777;
@@ -66,7 +67,7 @@
     }
 
     &-dropdown-content {
-        //display: none;
+        display: none;
         position: absolute;
         top: calc(100% + 1px);
         left: -1px;
@@ -100,14 +101,25 @@
 
         & ul {
             list-style-type: none;
-            padding: 0;
             margin: 0;
+            padding: 0;
         }
 
         & > ul > li {
+            position: relative;
             display: flex;
-            padding-left: 15px;
             padding: 15px;
+            & + li {
+                &::before{
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 15px;
+                    width: calc(100% - 30px);
+                    height: 1px;
+                    background-color: #e7e7e7;
+                }
+            }
             & label{
                 white-space: nowrap;
             }
