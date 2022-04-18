@@ -191,8 +191,8 @@ document.addEventListener("DOMContentLoaded", function () {
    let navFilter = document.querySelector('.nav-filter');
 
    if(navFilter){
-       navFilter.addEventListener("click", (event) => {
-           console.log(event.target.classList);
+        navFilter.addEventListener("click", (event) => {
+           //console.log(event.target.classList);
 
            let navFilterItemDropdown = document.querySelector("#nav-filter-sortBy .nav-filter-item-dropdown");
            let navFilterDropdownContent = document.querySelector("#nav-filter-sortBy .nav-filter-dropdown-content");
@@ -208,6 +208,21 @@ document.addEventListener("DOMContentLoaded", function () {
                mobileNavFilterDropdownContent.classList.remove("active");
            }
        });
+
+       // -------- Hide filters dropdown when click on page ----------------
+
+        let body = document.querySelector('body');
+        body.addEventListener('click', hideFilterDropdowns);
+
+        function hideFilterDropdowns(e){
+            if(!e.target.closest('.nav-filter-item')){
+                let dropDowns = document.querySelectorAll('.nav-filter-dropdown-content');
+                dropDowns.forEach(item => {
+                    item.classList.remove('active');
+                    item.previousElementSibling.classList.remove('active');
+                });
+            }
+        }
    } 
 });
 
