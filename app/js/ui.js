@@ -1,49 +1,35 @@
-/************ nodeList.forEach polyfill *******************/
-
-(function () {
-  if (window.NodeList && !NodeList.prototype.forEach) {
-    NodeList.prototype.forEach = Array.prototype.forEach;
-  }
-})();
-
-/************ matches polyfill *******************/
-
-(function () {
-
-  if (!Element.prototype.matches) {
-
-    Element.prototype.matches = Element.prototype.matchesSelector ||
-      Element.prototype.webkitMatchesSelector ||
-      Element.prototype.mozMatchesSelector ||
-      Element.prototype.msMatchesSelector;
-
-  }
-
-})();
-
-/************ closest polyfill *******************/
-
-(function () {
-
-  if (!Element.prototype.closest) {
-
-    Element.prototype.closest = function (css) {
-      var node = this;
-
-      while (node) {
-        if (node.matches(css)) return node;
-        else node = node.parentElement;
-      }
-      return null;
-    };
-  }
-
-})();
-
-
 window.addEventListener('DOMContentLoaded', function () {
 
-  /***************************MODAL HANDLER START*******************************/
+  /**************CAROSELS **************/
+
+  let owlCarousel = document.querySelector('.owl-carousel');
+  if(owlCarousel !== null){
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      autoWidth: true,
+      navText: ["&lsaquo;", "&rsaquo;"],
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        600: {
+          items: 3,
+          nav: false
+        },
+        1000: {
+          items: 5,
+          nav: true,
+          loop: false
+        }
+      }
+    });
+  }
+
+
+
+  /***************************MODAL HANDLER START*****************************/
 
   let showPopupBtns = document.querySelectorAll('[data-popup-toggle]');
   let mdlPopup = document.getElementById('mdl-popup');
@@ -88,10 +74,12 @@ window.addEventListener('DOMContentLoaded', function () {
 
 /***************************MODAL HANDLER END*******************************/
 
-
+/*  tooltip to be fixed or removed */
 $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip({ container: 'body' });
 });
+
+/*********************************** */
 
 function setSearchListeners() {
   const searchTab = document.querySelector("[data-search=tab]");
@@ -336,4 +324,5 @@ if (dropDownItems.length !== 0) {
       });
     }
   });
+  
 }

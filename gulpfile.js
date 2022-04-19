@@ -21,10 +21,12 @@ function styles(){
 
 function scripts(){
   return src([
-    'app/js/main.js'
+    'app/js/ui.js',
+    'app/js/login.js',
+    'app/js/suggestionsearch.js'
   ])
-  .pipe(babel({presets: ['@babel/env']}))
   .pipe(concat('main.min.js'))
+  .pipe(babel({presets: ['@babel/env']}))
   .pipe(sourcemaps.init())
   .pipe(uglify())
   .pipe(sourcemaps.write(''))
