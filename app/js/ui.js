@@ -74,13 +74,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
 /***************************MODAL HANDLER END*******************************/
 
-/*  tooltip to be fixed or removed */
-$(document).ready(function () {
-  $('[data-toggle="tooltip"]').tooltip({ container: 'body' });
-});
-
-/*********************************** */
-
 function setSearchListeners() {
   const searchTab = document.querySelector("[data-search=tab]");
   const searchTabInput = document.querySelector("[data-search=input]");
@@ -165,21 +158,6 @@ if (elements.length !== 0) {
 
 /***************FILTERS DROPDOWNS START *********************/
 
-/* let tags = document.getElementsByClassName("nav-filter-item-dropdown");
-
-if (tags.length !== 0) {
-  Array.prototype.forEach.call(tags, function (el) {
-    // Do stuff here
-    console.log(el);
-    el.addEventListener("click", function (el) {
-      el.currentTarget.classList.toggle("active");
-      el.currentTarget.parentNode
-        .getElementsByClassName("nav-filter-dropdown-content")[0]
-        .classList.toggle("active");
-    });
-  });
-} */
-
 let navFilterBtns = document.querySelectorAll(".nav-filter-item .nav-filter-item-dropdown");
 
 if(navFilterBtns.length !== 0){
@@ -237,6 +215,8 @@ if (navFilter) {
 }
 
 /***************FILTERS DROPDOWNS END *********************/
+
+/***************MENUS START******************/
 
 let dropDownMenus = [];
 let dropDownMenuHide = (menu, toggle) => {
@@ -324,5 +304,26 @@ if (dropDownItems.length !== 0) {
       });
     }
   });
-  
+
+  /*********************MENUS END ****************************/
+
+  /***************CART QUANTITY START ***********************/
+
+  $('.minus-bt').click(function () {
+    var qnty = parseFloat($('#qnty_txt').val());
+    if ((qnty == 1) || (qnty < 1)) {
+    qnty = 2;
+    }
+    var count = qnty - 1;
+    $('#qnty_txt').val(count);
+    })
+    $('.plus-bt').click(function () {
+    var qnty = parseFloat($('#qnty_txt').val());
+    var count = qnty + 1;
+    $('#qnty_txt').val(count);
+  });
+
+
+ /***************CART QUANTITY end ***********************/
+    
 }
