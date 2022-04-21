@@ -323,7 +323,6 @@ if (dropDownItems.length !== 0) {
     $('#qnty_txt').val(count);
   });
 
-
  /***************CART QUANTITY end ***********************/
-    
+
 }

@@ -377,16 +377,13 @@
                 margin-bottom: 9px;
             }
 
-            &:hover {
-                a {
-                    color: #76b82a;
-                }
-
-                i {
+            & > a:hover{
+                color: #76b82a;
+                & > i {
                     filter: invert(60%) sepia(55%) saturate(556%) hue-rotate(45deg) brightness(96%) contrast(89%);
                 }
             }
-
+            
             &__count {
                 position: absolute;
                 display: -ms-flexbox;
