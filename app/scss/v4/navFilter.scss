@@ -1,7 +1,6 @@
 ﻿/// <reference path="vars.scss" />
 /*#nav-filter-mobile {
     display: none;
-
     @include respond(tablet) {
         display: block !important;
     }
@@ -16,7 +15,6 @@
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-
     /* @include respond(tablet) {
         grid-template-columns: 1fr 1fr;
     } */
@@ -107,8 +105,9 @@
             position: relative;
             display: flex;
             padding: 15px;
+
             & + li {
-                &::before{
+                &::before {
                     position: absolute;
                     content: '';
                     top: 0;
@@ -118,7 +117,8 @@
                     background-color: #e7e7e7;
                 }
             }
-            & label{
+
+            & label {
                 white-space: nowrap;
             }
         }
@@ -134,8 +134,8 @@
     }
 }
 
-@media only screen and (max-width: 980px){
-	.nav-filter{
+@media only screen and (max-width: 980px) {
+    .nav-filter {
         grid-template-columns: 1fr 1fr;
-	}
+    }
 }

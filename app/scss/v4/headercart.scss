@@ -1,0 +1,150 @@
+@import 'vars';
+
+[data-toggle="headercart"]:hover{
+  .headercart{
+    max-height: 80vh;
+  }
+}
+
+.headercart{
+  position: absolute;
+  top: 100%;
+  right: 8px;
+  width: 300px;
+  max-height: 0;
+  z-index: 15;
+  overflow: hidden;
+  transition: max-height .5s ease-in-out;
+  * {
+    color: $fontColorStandard;
+  }
+
+  *, *::before, *::after{
+    margin: 0;
+    padding: 0;
+  }
+
+  &.active{
+    max-height: 80vh;
+  }
+}
+
+.headercart-wrapper{
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.headercart-header {
+    display: flex;
+    height: 48px;
+}
+
+.headercart-header {
+    padding-top: 8px;
+}
+
+.headercart-footer {
+    padding-top: 16px;
+}
+
+.headercart-product-card {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+}
+
+.headercart-title {
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.headercart-image {
+    flex-shrink: 0;
+    width: 60px;
+}
+
+.headercart-details {
+    width: 150px;
+    font-size: 13px;
+
+    &__title {
+        display: block;
+    }
+
+    &__brand, &__name {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    &__name {
+        font-size: 13px;
+    }
+
+    &__meta {
+
+        dt, dd {
+            display: inline-block;
+        }
+    }
+}
+
+.headercart-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &__regular, &__discount {
+        font-weight: 400;
+        text-align: right;
+        white-space: nowrap;
+    }
+
+    &__discount {
+        * {
+            display: block;
+        }
+
+        .current {
+            font-weight: 400;
+            color: $fontColorRegularDiscount;
+        }
+
+        .regular {
+            font-weight: normal;
+            text-decoration: line-through;
+        }
+    }
+}
+
+.headercart-summary {
+    width: 100%;
+    margin-bottom: 8px;
+    vertical-align: middle;
+    font-size: 14px;
+
+    tr:last-child {
+        font-weight: 400;
+    }
+
+    &__name {
+        span {
+            font-weight: normal;
+            color: #777;
+        }
+    }
+
+    &__value {
+        text-align: right;
+    }
+}
+
