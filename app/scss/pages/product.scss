@@ -326,10 +326,13 @@ h4.cat-title {
 
 .carousel-inner .item {
     text-align: center;
+    overflow: hidden;
 }
 
 .carousel-inner .item img {
     display: inline-block;
+    cursor: zoom-in;
+    transform-origin: 0 0 0;
 }
 
 

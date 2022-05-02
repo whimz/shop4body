@@ -11,8 +11,15 @@
   <!-- <link rel="shortcut icon" type="image/png" href="https://localhost:44374/images/logo/favicon/favicon.png"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com/">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- <link rel="stylesheet" href="./Shop4body.dk_files/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./Shop4body.dk_files/font-awesome.min.css">
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/owlCarousel/owl.carousel.min.js"></script>
+  <script src="./lib/jquery-ui/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="scss/libs/owl.carousel.scss">
+  <link rel="stylesheet" href="scss/libs/owl.theme.default.scss">
   <link rel="stylesheet" href="css/application.min.css">
 
   <!--[if IE]><html class="ie">< ![endif]-->
@@ -77,6 +84,10 @@
         <div class="popup-footer">
 
         </div>
+      </div>
+
+      <div class="popup-content" data-popup="default">
+        <p class="popup-message"></p>
       </div>
 
     </div>
@@ -307,6 +318,441 @@
     </div>
   </header>
   <div class="wrapper">
+    <div class="my-container">
+      <div class="product-wrapper">
+
+        <div class="body-breadcrumb">
+          <ul>
+            <li><a href="/">Hjem</a></li>
+            <li>Silikonbeskytter til sko - 6 stk.</li>
+          </ul>
+        </div>
+        <div class="body-product">
+          <div class="product-head-area">
+            <div class="product-img-header-area">
+              <div class="product-img-area">
+                <div class="product-img">
+                  <div id="product_slider" class="carousel slide" data-interval="3000" data-ride="false">
+
+                    <div class="carousel-inner">
+
+                      <div class="active item"><img
+                          src="https://www.shop4body.dk/billeder/10614-l/nakkestoette-honningpude.jpg"
+                          alt="nakkestoette-honningpude.jpg" /></div>
+                    </div>
+                    <div class="carousel-indicators product_thumbnail">
+                      <a data-target="#product_slider" data-slide-to="0" class=&quot;active&quot;
+                        style="background-image:url(https://www.shop4body.dk/billeder/10614-xs/nakkestoette-honningpude.jpg );"></a>
+                      <a data-target="#product_slider" data-slide-to="1"
+                        style="background-image:url(https://www.shop4body.dk/billeder/10615-xs/nakkestoette-honningpude.jpg );"></a>
+                      <a data-target="#product_slider" data-slide-to="2"
+                        style="background-image:url(https://www.shop4body.dk/billeder/10611-xs/nakkestoette-honningpude.jpg );"></a>
+                      <a data-target="#product_slider" data-slide-to="3"
+                        style="background-image:url(https://www.shop4body.dk/billeder/10612-xs/nakkestoette-honningpude.jpg );"></a>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-header-area" itemscope itemtype="http://schema.org/Product">
+                <div class="product-des">
+                  <h2 itemprop="name">Silikonbeskytter til sko - 6 stk.</h2>
+                  <p>Reduserer friksjon, gnagsår og vabler.</p>
+
+                  <span class="addtocart-bt">På lager</span>
+                  <div class="clear"></div>
+                  <div class="orderbefore"><span class="glyphicon glyphicon-info-sign"></span> Bestill innen kl. 14:00
+                    (mandag-fredag), og vi sender samme dag.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-buy-area">
+              <div class="kurv-box">
+                <div class="kurv-box_favourite"><button id="fav_button" class="button button-favourite "><i
+                      class="fa fa-heart"></i></button></div>
+                <div class="kurvPriceArea">
+
+                  <span id="compareAtPrice" class="striked"></span>
+
+                  <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="itemCondition" itemtype="http://schema.org/OfferItemCondition"
+                      content="http://schema.org/NewCondition" />
+                    <link itemprop="availability" href="http://schema.org/InStock" />
+                    <meta itemprop="priceCurrency" content="NOK" />
+                    <meta itemprop="price" content="59.95" />
+                    <div class="thePrice" id="theprice">59,95 kr</div>
+                    <div class="priceIncludes">Toll og MVA er inkludert</div>
+                  </div>
+                </div>
+                <form id="myform" name="myform" method="post" action="/front/product/AddProductToCart"
+                  onsubmit="return checkForm();">
+                  <meta itemprop="sku" content="FOD145" />
+                  <meta itemprop="category" />
+                  <meta itemprop="image"
+                    content="https://www.shop4body.dk/billeder/10614-l/nakkestoette-honningpude.jpg" />
+                  <input type="hidden" name="catid" id="catid" value="0" />
+                  <input type="hidden" name="productid" id="productid" value="2319" />
+                  <div class="size-tab">
+                    <label>St&#xF8;rrelse:</label>
+                    <fieldset class="single-option-radio" data-option="option1" name="variantids"
+                      id="ProductSelect-option-0">
+                      <input type="radio" onchange="updateVariantInfo(this, '')" value="2983" name="variantid"
+                        class="single-option-selector__radio" data-option="option1" id="ProductSelect-option-Size-2983"
+                        checked />
+                      <label for="ProductSelect-option-Size-2983">6 stk. </label>
+                    </fieldset>
+                  </div>
+                  <div class="quantity">
+                    <label>Antall :</label>
+                    <div class="quantity-box">
+                      <a href="javascript:" class="minus-bt"><img src="/images/shopimages/mnus-bt.png" /></a>
+                      <input type="text" id="qnty_txt" name="quantity" class="quantity-txt" value="1" />
+                      <a href="javascript:" class="plus-bt"><img src="/images/shopimages/plus-bt.png" /></a>
+                    </div>
+                    <div class="clear"></div>
+
+                    <input type="submit" class="tilfoj_btn" value="Legg i kurv" />
+
+                    <div class="shippingPriceQuote">
+                      Levering med <img title="Postnord" src="/images/icons/postnord-se.png"> 39,00 kr
+                    </div>
+
+                  </div>
+                  <div class="payment-cards">
+                    <h5 class="product-heading-h5"></h5>
+                    <img src="/images/icons/shop4bodyno/payoptions.png" class="img-responsive" />
+                  </div>
+                </form>
+              </div>
+
+            </div>
+          </div>
+          <div class="product-description-area">
+            <div class="product-tab-detail">
+              <a href="javascript:" id="beskrivelse_bt" class="active_tab outer"
+                onclick="opendtltab('beskrivelse')">Beskrivelse</a>
+
+              <div class="product-tab-detail-txt" id="beskrivelse" style="display:block" itemprop="description">
+                <p>Silikonbeskyttere til sko er&nbsp;laget av myk&nbsp;silikon med lim p&aring; baksiden, s&aring; de
+                  kan limes fast i skoen.&nbsp;</p>
+                <p><strong>Bruk:&nbsp;</strong></p>
+                <p>Limes fast i en ren og t&oslash;rr sko.&nbsp;</p>
+                <p><strong>Innhold:&nbsp;</strong></p>
+                <p>6 stk silikonbeskyttere.&nbsp;</p>
+                <p><strong>M&aring;l:</strong>&nbsp;3,2x2,5x0,2 cm</p>
+                <p><strong>Materiale:&nbsp;</strong></p>
+                <p>Silikon og lim.&nbsp;</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="customers-who-bought">
+          <h4 class="cat-title">Mest solgte i kategorien:</h4>
+          <div id="topselling" class="product-cat-tab owl-carousel owl-theme" style="display: block;">
+
+            <div class="item1 grid-item">
+              <div class="item-inner">
+                <a href="/p/ultra-soft-kne-support?catid=100">
+                  <img class="carousel-product-img"
+                    src="https://www.shop4body.dk/billeder/7486-m/ultra-soft-knaebind-1-stk-.jpg"
+                    alt="Ultra Soft Kne Support - 1 stk.">
+                </a>
+                <div class="item-des">
+                  <p class="carousel-prodheader">
+                    <a href="/p/ultra-soft-kne-support?catid=100">Ultra Soft Kne Support - 1 stk.</a>
+                  </p>
+                  <div class="item-description">Passer for all slags aktivitet.</div>
+                  <span class="prices">
+                    <span class="normalprice">159,95 kr</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item1 grid-item">
+              <div class="item-inner">
+                <a href="/p/honningpute?catid=100">
+                  <img class="carousel-product-img"
+                    src="https://www.shop4body.dk/billeder/10160-m/honningpude-1-stk-.jpg" alt="Honningpute - 1 stk.">
+                </a>
+                <div class="item-des">
+                  <p class="carousel-prodheader">
+                    <a href="/p/honningpute?catid=100">Honningpute - 1 stk.</a>
+                  </p>
+                  <div class="item-description">Skåner ryggsøylen, haleben og hofter.</div>
+                  <span class="prices">
+                    <span class="normalprice">199,95 kr</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item1 grid-item">
+              <div class="item-inner">
+                <a href="/p/forfot-pute-med-skum?catid=100">
+                  <img class="carousel-product-img"
+                    src="https://www.shop4body.dk/billeder/8537-m/forfodspad-med-skum-og-aaben-taa-1-par-.jpg"
+                    alt="Forfot pute med skum - 1 par.">
+                </a>
+                <div class="item-des">
+                  <p class="carousel-prodheader">
+                    <a href="/p/forfot-pute-med-skum?catid=100">Forfot pute med skum - 1 par.</a>
+                  </p>
+                  <div class="item-description">Lindrer og beskytter sår forfot.</div>
+                  <span class="prices">
+                    <span class="normalprice">99,95 kr</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item1 grid-item">
+              <div class="item-inner">
+                <a href="/p/elastisk-belte-uten-spenne?catid=100">
+                  <img class="carousel-product-img"
+                    src="https://www.shop4body.dk/billeder/10197-m/spaendefrit-elastik-baelte-1-stk-.jpg"
+                    alt="Elastisk belte uten spenne">
+                </a>
+                <div class="item-des">
+                  <p class="carousel-prodheader">
+                    <a href="/p/elastisk-belte-uten-spenne?catid=100">Elastisk belte uten spenne</a>
+                  </p>
+                  <div class="item-description">Unisex-belte, uten upraktisk beltespenne.</div>
+                  <span class="prices">
+                    <span class="normalprice">149,95 kr</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item1 grid-item">
+              <div class="item-inner">
+                <a href="/p/knebind-med-magneter?catid=100">
+                  <img class="carousel-product-img"
+                    src="https://www.shop4body.dk/billeder/7937-m/knaebind-med-magneter-1-par-.jpg"
+                    alt="Knebind med magneter - 1 par.">
+                </a>
+                <div class="item-des">
+                  <p class="carousel-prodheader">
+                    <a href="/p/knebind-med-magneter?catid=100">Knebind med magneter - 1 par.</a>
+                  </p>
+                  <div class="item-description">Reduserer hevelser, ubehag, ømhet, uro og..</div>
+                  <span class="prices">
+                    <span class="normalprice">189,95 kr</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item1 grid-item">
+              <div class="item-inner">
+                <a href="/p/bambus-knebind-med-turmalinmagneter?catid=100">
+                  <img class="carousel-product-img"
+                    src="https://www.shop4body.dk/billeder/8845-m/bambus-knaebind-med-tourmaline-magneter-1-par-.jpg"
+                    alt="Bambus knebind med turmalinmagneter - 1 par.">
+                </a>
+                <div class="item-des">
+                  <p class="carousel-prodheader">
+                    <a href="/p/bambus-knebind-med-turmalinmagneter?catid=100">Bambus knebind med turmalinmagneter - 1
+                      par.</a>
+                  </p>
+                  <div class="item-description">Reduserer hevelser, ubehag, ømhet, uro og..</div>
+                  <span class="prices">
+                    <span class="normalprice">169,95 kr</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item1 grid-item">
+              <div class="item-inner">
+                <a href="/p/ta-stotte-i-silikon-2?catid=100">
+                  <img class="carousel-product-img"
+                    src="https://www.shop4body.dk/billeder/5253-m/taa-stoette-i-silikone-2-stk-i-pakke.jpg"
+                    alt="Tå støtte i silikon (2 stk)">
+                  <span class="salePercentFlag">30%</span>
+                </a>
+                <div class="item-des">
+                  <p class="carousel-prodheader">
+                    <a href="/p/ta-stotte-i-silikon-2?catid=100">Tå støtte i silikon (2 stk)</a>
+                  </p>
+                  <div class="item-description">Mot skjev tå Hallux Valgus og knuter.</div>
+                  <span class="prices">
+                    <span class="striked">99,95</span>
+                    <span class="offerprice">69,95 kr</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item1 grid-item">
+              <div class="item-inner">
+                <a href="/p/saler-i-myk-silikon?catid=100">
+                  <img class="carousel-product-img"
+                    src="https://www.shop4body.dk/billeder/6996-m/saaler-i-bloed-silikone-1-par-.jpg"
+                    alt="Såler i myk silikon - 2 stk.">
+                  <span class="salePercentFlag">28%</span>
+                </a>
+                <div class="item-des">
+                  <p class="carousel-prodheader">
+                    <a href="/p/saler-i-myk-silikon?catid=100">Såler i myk silikon - 2 stk.</a>
+                  </p>
+                  <div class="item-description">Reduserer smerter ved nedfallet forfot og..</div>
+                  <span class="prices">
+                    <span class="striked">179,95</span>
+                    <span class="offerprice">129,95 kr</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item1 grid-item">
+              <div class="item-inner">
+                <a href="/p/mykt-forfots-bind-med-silikon?catid=100">
+                  <img class="carousel-product-img"
+                    src="https://www.shop4body.dk/billeder/5303-m/bloedt-forfodsbind-med-silikone-.jpg"
+                    alt="Mykt forfots bind med silikon.">
+                </a>
+                <div class="item-des">
+                  <p class="carousel-prodheader">
+                    <a href="/p/mykt-forfots-bind-med-silikon?catid=100">Mykt forfots bind med silikon.</a>
+                  </p>
+                  <div class="item-description">Lindrer og beskytter.</div>
+                  <span class="prices">
+                    <span class="normalprice">129,95 kr</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item1 grid-item">
+              <div class="item-inner">
+                <a href="/p/fotvalvsstod?catid=100">
+                  <img class="carousel-product-img"
+                    src="https://www.shop4body.dk/billeder/8719-m/svangstoettesaal-1-par-.jpg"
+                    alt="Fotvalvsstöd - 1 par.">
+                </a>
+                <div class="item-des">
+                  <p class="carousel-prodheader">
+                    <a href="/p/fotvalvsstod?catid=100">Fotvalvsstöd - 1 par.</a>
+                  </p>
+                  <div class="item-description">Stöttar effektivt fotvalv och häl.</div>
+                  <span class="prices">
+                    <span class="normalprice">139,95 kr</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item1 grid-item">
+              <div class="item-inner">
+                <a href="/p/luksus-led-kjorelys-med-reflektor?catid=100">
+                  <img class="carousel-product-img"
+                    src="https://www.shop4body.dk/billeder/9983-m/luksus-led-loebelys-med-refleks-ce-godkendt-.jpg"
+                    alt="Luksus LED-kjørelys med reflektor - CE-godkjent.">
+                </a>
+                <div class="item-des">
+                  <p class="carousel-prodheader">
+                    <a href="/p/luksus-led-kjorelys-med-reflektor?catid=100">Luksus LED-kjørelys med reflektor -
+                      CE-godkjent.</a>
+                  </p>
+                  <div class="item-description">Våkn opp i mørket (inkl. Batterier).</div>
+                  <span class="prices">
+                    <span class="normalprice">79,95 kr</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item1 grid-item">
+              <div class="item-inner">
+                <a href="/p/akupressur-kneband?catid=100">
+                  <img class="carousel-product-img"
+                    src="https://www.shop4body.dk/billeder/4959-m/akupressur-knaebind-1-stk-.jpg"
+                    alt="Akupressur Knebånd - 1 stk.">
+                </a>
+                <div class="item-des">
+                  <p class="carousel-prodheader">
+                    <a href="/p/akupressur-kneband?catid=100">Akupressur Knebånd - 1 stk.</a>
+                  </p>
+                  <div class="item-description">Lindrer rygg, korsrygg og ben smerte.</div>
+                  <span class="prices">
+                    <span class="normalprice">129,95 kr</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item1 grid-item">
+              <div class="item-inner">
+                <a href="/p/natt-biteskinne-formes-etter-tenner?catid=100">
+                  <img class="carousel-product-img"
+                    src="https://www.shop4body.dk/billeder/7965-m/nat-bideskinne-formes-efter-taender.jpg"
+                    alt="Natt biteskinne formes etter tenner">
+                </a>
+                <div class="item-des">
+                  <p class="carousel-prodheader">
+                    <a href="/p/natt-biteskinne-formes-etter-tenner?catid=100">Natt biteskinne formes etter tenner</a>
+                  </p>
+                  <div class="item-description">Nattskinne mod snorking, skjære tenner og..</div>
+                  <span class="prices">
+                    <span class="normalprice">169,95 kr</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item1 grid-item">
+              <div class="item-inner">
+                <a href="/p/ta-bind-ror?catid=100">
+                  <img class="carousel-product-img"
+                    src="https://www.shop4body.dk/billeder/7664-m/taa-bind-roer-1-stk.jpg"
+                    alt="Tå bind rør - nok til alle tær. (1 stk)">
+                </a>
+                <div class="item-des">
+                  <p class="carousel-prodheader">
+                    <a href="/p/ta-bind-ror?catid=100">Tå bind rør - nok til alle tær. (1 stk)</a>
+                  </p>
+                  <div class="item-description">Foret med myk silikon til følsomme tær og..</div>
+                  <span class="prices">
+                    <span class="normalprice">59,95 kr</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item1 grid-item">
+              <div class="item-inner">
+                <a href="/p/sport-kompresjonsstromper-til-loping-fitness-vekttrening-mm?catid=100">
+                  <img class="carousel-product-img"
+                    src="https://www.shop4body.dk/billeder/4633-m/sports-kompressionsstroemper-til-loeb-fitness-vaegttraening-mm-.jpg"
+                    alt="Sport kompresjonsstrømper til løping, fitness, vekttrening mm.">
+                </a>
+                <div class="item-des">
+                  <p class="carousel-prodheader">
+                    <a href="/p/sport-kompresjonsstromper-til-loping-fitness-vekttrening-mm?catid=100">Sport
+                      kompresjonsstrømper til løping, fitness, vekttrening mm.</a>
+                  </p>
+                  <div class="item-description">Økt prestasjonsevne, utholdenhet og korter..</div>
+                  <span class="prices">
+                    <span class="normalprice">129,95 kr</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item1 grid-item">
+              <div class="item-inner">
+                <a href="/p/refleksvest?catid=100">
+                  <img class="carousel-product-img"
+                    src="https://www.shop4body.dk/billeder/10557-m/refleksvest-1-stk-.jpg" alt="Refleksvest - 1 stk.">
+                  <span class="salePercentFlag">25%</span>
+                </a>
+                <div class="item-des">
+                  <p class="carousel-prodheader">
+                    <a href="/p/refleksvest?catid=100">Refleksvest - 1 stk.</a>
+                  </p>
+                  <div class="item-description">Høy synlighet - bli sett fra alle kanter.</div>
+                  <span class="prices">
+                    <span class="striked">119,95</span>
+                    <span class="offerprice">89,95 kr</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
     <section class="width-1200 content-box">
       <div class="cart-content">
 
@@ -2319,441 +2765,7 @@
     </div>
 
 
-    <div class="my-container">
-      <div class="product-wrapper">
-
-        <div class="body-breadcrumb">
-          <ul>
-            <li><a href="/">Hjem</a></li>
-            <li>Silikonbeskytter til sko - 6 stk.</li>
-          </ul>
-        </div>
-        <div class="body-product">
-          <div class="product-head-area">
-            <div class="product-img-header-area">
-              <div class="product-img-area">
-                <div class="product-img">
-                  <div id="product_slider" class="carousel slide" data-interval="3000" data-ride="false">
-
-                    <div class="carousel-inner">
-
-                      <div class="active item"><img
-                          src="https://www.shop4body.dk/billeder/10614-l/nakkestoette-honningpude.jpg"
-                          alt="nakkestoette-honningpude.jpg" /></div>
-                    </div>
-                    <div class="carousel-indicators product_thumbnail">
-                      <a data-target="#product_slider" data-slide-to="0" class=&quot;active&quot;
-                        style="background-image:url(https://www.shop4body.dk/billeder/10614-xs/nakkestoette-honningpude.jpg );"></a>
-                      <a data-target="#product_slider" data-slide-to="1"
-                        style="background-image:url(https://www.shop4body.dk/billeder/10615-xs/nakkestoette-honningpude.jpg );"></a>
-                      <a data-target="#product_slider" data-slide-to="2"
-                        style="background-image:url(https://www.shop4body.dk/billeder/10611-xs/nakkestoette-honningpude.jpg );"></a>
-                      <a data-target="#product_slider" data-slide-to="3"
-                        style="background-image:url(https://www.shop4body.dk/billeder/10612-xs/nakkestoette-honningpude.jpg );"></a>
-                    </div>
-                    <div class="clear"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-header-area" itemscope itemtype="http://schema.org/Product">
-                <div class="product-des">
-                  <h2 itemprop="name">Silikonbeskytter til sko - 6 stk.</h2>
-                  <p>Reduserer friksjon, gnagsår og vabler.</p>
-
-                  <span class="addtocart-bt">På lager</span>
-                  <div class="clear"></div>
-                  <div class="orderbefore"><span class="glyphicon glyphicon-info-sign"></span> Bestill innen kl. 14:00
-                    (mandag-fredag), og vi sender samme dag.</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="product-buy-area">
-              <div class="kurv-box">
-                <div class="kurv-box_favourite"><button id="fav_button" class="button button-favourite "><i
-                      class="fa fa-heart"></i></button></div>
-                <div class="kurvPriceArea">
-
-                  <span id="compareAtPrice" class="striked"></span>
-
-                  <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                    <meta itemprop="itemCondition" itemtype="http://schema.org/OfferItemCondition"
-                      content="http://schema.org/NewCondition" />
-                    <link itemprop="availability" href="http://schema.org/InStock" />
-                    <meta itemprop="priceCurrency" content="NOK" />
-                    <meta itemprop="price" content="59.95" />
-                    <div class="thePrice" id="theprice">59,95 kr</div>
-                    <div class="priceIncludes">Toll og MVA er inkludert</div>
-                  </div>
-                </div>
-                <form id="myform" name="myform" method="post" action="/front/product/AddProductToCart"
-                  onsubmit="return checkForm();">
-                  <meta itemprop="sku" content="FOD145" />
-                  <meta itemprop="category" />
-                  <meta itemprop="image"
-                    content="https://www.shop4body.dk/billeder/10614-l/nakkestoette-honningpude.jpg" />
-                  <input type="hidden" name="catid" id="catid" value="0" />
-                  <input type="hidden" name="productid" id="productid" value="2319" />
-                  <div class="size-tab">
-                    <label>St&#xF8;rrelse:</label>
-                    <fieldset class="single-option-radio" data-option="option1" name="variantids"
-                      id="ProductSelect-option-0">
-                      <input type="radio" onchange="updateVariantInfo(this, '')" value="2983" name="variantid"
-                        class="single-option-selector__radio" data-option="option1" id="ProductSelect-option-Size-2983"
-                        checked />
-                      <label for="ProductSelect-option-Size-2983">6 stk. </label>
-                    </fieldset>
-                  </div>
-                  <div class="quantity">
-                    <label>Antall :</label>
-                    <div class="quantity-box">
-                      <a href="javascript:" class="minus-bt"><img src="/images/shopimages/mnus-bt.png" /></a>
-                      <input type="text" id="qnty_txt" name="quantity" class="quantity-txt" value="1" />
-                      <a href="javascript:" class="plus-bt"><img src="/images/shopimages/plus-bt.png" /></a>
-                    </div>
-                    <div class="clear"></div>
-
-                    <input type="submit" class="tilfoj_btn" value="Legg i kurv" />
-
-                    <div class="shippingPriceQuote">
-                      Levering med <img title="Postnord" src="/images/icons/postnord-se.png"> 39,00 kr
-                    </div>
-
-                  </div>
-                  <div class="payment-cards">
-                    <h5 class="product-heading-h5"></h5>
-                    <img src="/images/icons/shop4bodyno/payoptions.png" class="img-responsive" />
-                  </div>
-                </form>
-              </div>
-
-            </div>
-          </div>
-          <div class="product-description-area">
-            <div class="product-tab-detail">
-              <a href="javascript:" id="beskrivelse_bt" class="active_tab outer"
-                onclick="opendtltab('beskrivelse')">Beskrivelse</a>
-
-              <div class="product-tab-detail-txt" id="beskrivelse" style="display:block" itemprop="description">
-                <p>Silikonbeskyttere til sko er&nbsp;laget av myk&nbsp;silikon med lim p&aring; baksiden, s&aring; de
-                  kan limes fast i skoen.&nbsp;</p>
-                <p><strong>Bruk:&nbsp;</strong></p>
-                <p>Limes fast i en ren og t&oslash;rr sko.&nbsp;</p>
-                <p><strong>Innhold:&nbsp;</strong></p>
-                <p>6 stk silikonbeskyttere.&nbsp;</p>
-                <p><strong>M&aring;l:</strong>&nbsp;3,2x2,5x0,2 cm</p>
-                <p><strong>Materiale:&nbsp;</strong></p>
-                <p>Silikon og lim.&nbsp;</p>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="customers-who-bought">
-          <h4 class="cat-title">Mest solgte i kategorien:</h4>
-          <div id="topselling" class="product-cat-tab owl-carousel owl-theme" style="display: block;">
-
-            <div class="item1 grid-item">
-              <div class="item-inner">
-                <a href="/p/ultra-soft-kne-support?catid=100">
-                  <img class="carousel-product-img"
-                    src="https://www.shop4body.dk/billeder/7486-m/ultra-soft-knaebind-1-stk-.jpg"
-                    alt="Ultra Soft Kne Support - 1 stk.">
-                </a>
-                <div class="item-des">
-                  <p class="carousel-prodheader">
-                    <a href="/p/ultra-soft-kne-support?catid=100">Ultra Soft Kne Support - 1 stk.</a>
-                  </p>
-                  <div class="item-description">Passer for all slags aktivitet.</div>
-                  <span class="prices">
-                    <span class="normalprice">159,95 kr</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="item1 grid-item">
-              <div class="item-inner">
-                <a href="/p/honningpute?catid=100">
-                  <img class="carousel-product-img"
-                    src="https://www.shop4body.dk/billeder/10160-m/honningpude-1-stk-.jpg" alt="Honningpute - 1 stk.">
-                </a>
-                <div class="item-des">
-                  <p class="carousel-prodheader">
-                    <a href="/p/honningpute?catid=100">Honningpute - 1 stk.</a>
-                  </p>
-                  <div class="item-description">Skåner ryggsøylen, haleben og hofter.</div>
-                  <span class="prices">
-                    <span class="normalprice">199,95 kr</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="item1 grid-item">
-              <div class="item-inner">
-                <a href="/p/forfot-pute-med-skum?catid=100">
-                  <img class="carousel-product-img"
-                    src="https://www.shop4body.dk/billeder/8537-m/forfodspad-med-skum-og-aaben-taa-1-par-.jpg"
-                    alt="Forfot pute med skum - 1 par.">
-                </a>
-                <div class="item-des">
-                  <p class="carousel-prodheader">
-                    <a href="/p/forfot-pute-med-skum?catid=100">Forfot pute med skum - 1 par.</a>
-                  </p>
-                  <div class="item-description">Lindrer og beskytter sår forfot.</div>
-                  <span class="prices">
-                    <span class="normalprice">99,95 kr</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="item1 grid-item">
-              <div class="item-inner">
-                <a href="/p/elastisk-belte-uten-spenne?catid=100">
-                  <img class="carousel-product-img"
-                    src="https://www.shop4body.dk/billeder/10197-m/spaendefrit-elastik-baelte-1-stk-.jpg"
-                    alt="Elastisk belte uten spenne">
-                </a>
-                <div class="item-des">
-                  <p class="carousel-prodheader">
-                    <a href="/p/elastisk-belte-uten-spenne?catid=100">Elastisk belte uten spenne</a>
-                  </p>
-                  <div class="item-description">Unisex-belte, uten upraktisk beltespenne.</div>
-                  <span class="prices">
-                    <span class="normalprice">149,95 kr</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="item1 grid-item">
-              <div class="item-inner">
-                <a href="/p/knebind-med-magneter?catid=100">
-                  <img class="carousel-product-img"
-                    src="https://www.shop4body.dk/billeder/7937-m/knaebind-med-magneter-1-par-.jpg"
-                    alt="Knebind med magneter - 1 par.">
-                </a>
-                <div class="item-des">
-                  <p class="carousel-prodheader">
-                    <a href="/p/knebind-med-magneter?catid=100">Knebind med magneter - 1 par.</a>
-                  </p>
-                  <div class="item-description">Reduserer hevelser, ubehag, ømhet, uro og..</div>
-                  <span class="prices">
-                    <span class="normalprice">189,95 kr</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="item1 grid-item">
-              <div class="item-inner">
-                <a href="/p/bambus-knebind-med-turmalinmagneter?catid=100">
-                  <img class="carousel-product-img"
-                    src="https://www.shop4body.dk/billeder/8845-m/bambus-knaebind-med-tourmaline-magneter-1-par-.jpg"
-                    alt="Bambus knebind med turmalinmagneter - 1 par.">
-                </a>
-                <div class="item-des">
-                  <p class="carousel-prodheader">
-                    <a href="/p/bambus-knebind-med-turmalinmagneter?catid=100">Bambus knebind med turmalinmagneter - 1
-                      par.</a>
-                  </p>
-                  <div class="item-description">Reduserer hevelser, ubehag, ømhet, uro og..</div>
-                  <span class="prices">
-                    <span class="normalprice">169,95 kr</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="item1 grid-item">
-              <div class="item-inner">
-                <a href="/p/ta-stotte-i-silikon-2?catid=100">
-                  <img class="carousel-product-img"
-                    src="https://www.shop4body.dk/billeder/5253-m/taa-stoette-i-silikone-2-stk-i-pakke.jpg"
-                    alt="Tå støtte i silikon (2 stk)">
-                  <span class="salePercentFlag">30%</span>
-                </a>
-                <div class="item-des">
-                  <p class="carousel-prodheader">
-                    <a href="/p/ta-stotte-i-silikon-2?catid=100">Tå støtte i silikon (2 stk)</a>
-                  </p>
-                  <div class="item-description">Mot skjev tå Hallux Valgus og knuter.</div>
-                  <span class="prices">
-                    <span class="striked">99,95</span>
-                    <span class="offerprice">69,95 kr</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="item1 grid-item">
-              <div class="item-inner">
-                <a href="/p/saler-i-myk-silikon?catid=100">
-                  <img class="carousel-product-img"
-                    src="https://www.shop4body.dk/billeder/6996-m/saaler-i-bloed-silikone-1-par-.jpg"
-                    alt="Såler i myk silikon - 2 stk.">
-                  <span class="salePercentFlag">28%</span>
-                </a>
-                <div class="item-des">
-                  <p class="carousel-prodheader">
-                    <a href="/p/saler-i-myk-silikon?catid=100">Såler i myk silikon - 2 stk.</a>
-                  </p>
-                  <div class="item-description">Reduserer smerter ved nedfallet forfot og..</div>
-                  <span class="prices">
-                    <span class="striked">179,95</span>
-                    <span class="offerprice">129,95 kr</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="item1 grid-item">
-              <div class="item-inner">
-                <a href="/p/mykt-forfots-bind-med-silikon?catid=100">
-                  <img class="carousel-product-img"
-                    src="https://www.shop4body.dk/billeder/5303-m/bloedt-forfodsbind-med-silikone-.jpg"
-                    alt="Mykt forfots bind med silikon.">
-                </a>
-                <div class="item-des">
-                  <p class="carousel-prodheader">
-                    <a href="/p/mykt-forfots-bind-med-silikon?catid=100">Mykt forfots bind med silikon.</a>
-                  </p>
-                  <div class="item-description">Lindrer og beskytter.</div>
-                  <span class="prices">
-                    <span class="normalprice">129,95 kr</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="item1 grid-item">
-              <div class="item-inner">
-                <a href="/p/fotvalvsstod?catid=100">
-                  <img class="carousel-product-img"
-                    src="https://www.shop4body.dk/billeder/8719-m/svangstoettesaal-1-par-.jpg"
-                    alt="Fotvalvsstöd - 1 par.">
-                </a>
-                <div class="item-des">
-                  <p class="carousel-prodheader">
-                    <a href="/p/fotvalvsstod?catid=100">Fotvalvsstöd - 1 par.</a>
-                  </p>
-                  <div class="item-description">Stöttar effektivt fotvalv och häl.</div>
-                  <span class="prices">
-                    <span class="normalprice">139,95 kr</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="item1 grid-item">
-              <div class="item-inner">
-                <a href="/p/luksus-led-kjorelys-med-reflektor?catid=100">
-                  <img class="carousel-product-img"
-                    src="https://www.shop4body.dk/billeder/9983-m/luksus-led-loebelys-med-refleks-ce-godkendt-.jpg"
-                    alt="Luksus LED-kjørelys med reflektor - CE-godkjent.">
-                </a>
-                <div class="item-des">
-                  <p class="carousel-prodheader">
-                    <a href="/p/luksus-led-kjorelys-med-reflektor?catid=100">Luksus LED-kjørelys med reflektor -
-                      CE-godkjent.</a>
-                  </p>
-                  <div class="item-description">Våkn opp i mørket (inkl. Batterier).</div>
-                  <span class="prices">
-                    <span class="normalprice">79,95 kr</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="item1 grid-item">
-              <div class="item-inner">
-                <a href="/p/akupressur-kneband?catid=100">
-                  <img class="carousel-product-img"
-                    src="https://www.shop4body.dk/billeder/4959-m/akupressur-knaebind-1-stk-.jpg"
-                    alt="Akupressur Knebånd - 1 stk.">
-                </a>
-                <div class="item-des">
-                  <p class="carousel-prodheader">
-                    <a href="/p/akupressur-kneband?catid=100">Akupressur Knebånd - 1 stk.</a>
-                  </p>
-                  <div class="item-description">Lindrer rygg, korsrygg og ben smerte.</div>
-                  <span class="prices">
-                    <span class="normalprice">129,95 kr</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="item1 grid-item">
-              <div class="item-inner">
-                <a href="/p/natt-biteskinne-formes-etter-tenner?catid=100">
-                  <img class="carousel-product-img"
-                    src="https://www.shop4body.dk/billeder/7965-m/nat-bideskinne-formes-efter-taender.jpg"
-                    alt="Natt biteskinne formes etter tenner">
-                </a>
-                <div class="item-des">
-                  <p class="carousel-prodheader">
-                    <a href="/p/natt-biteskinne-formes-etter-tenner?catid=100">Natt biteskinne formes etter tenner</a>
-                  </p>
-                  <div class="item-description">Nattskinne mod snorking, skjære tenner og..</div>
-                  <span class="prices">
-                    <span class="normalprice">169,95 kr</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="item1 grid-item">
-              <div class="item-inner">
-                <a href="/p/ta-bind-ror?catid=100">
-                  <img class="carousel-product-img"
-                    src="https://www.shop4body.dk/billeder/7664-m/taa-bind-roer-1-stk.jpg"
-                    alt="Tå bind rør - nok til alle tær. (1 stk)">
-                </a>
-                <div class="item-des">
-                  <p class="carousel-prodheader">
-                    <a href="/p/ta-bind-ror?catid=100">Tå bind rør - nok til alle tær. (1 stk)</a>
-                  </p>
-                  <div class="item-description">Foret med myk silikon til følsomme tær og..</div>
-                  <span class="prices">
-                    <span class="normalprice">59,95 kr</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="item1 grid-item">
-              <div class="item-inner">
-                <a href="/p/sport-kompresjonsstromper-til-loping-fitness-vekttrening-mm?catid=100">
-                  <img class="carousel-product-img"
-                    src="https://www.shop4body.dk/billeder/4633-m/sports-kompressionsstroemper-til-loeb-fitness-vaegttraening-mm-.jpg"
-                    alt="Sport kompresjonsstrømper til løping, fitness, vekttrening mm.">
-                </a>
-                <div class="item-des">
-                  <p class="carousel-prodheader">
-                    <a href="/p/sport-kompresjonsstromper-til-loping-fitness-vekttrening-mm?catid=100">Sport
-                      kompresjonsstrømper til løping, fitness, vekttrening mm.</a>
-                  </p>
-                  <div class="item-description">Økt prestasjonsevne, utholdenhet og korter..</div>
-                  <span class="prices">
-                    <span class="normalprice">129,95 kr</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="item1 grid-item">
-              <div class="item-inner">
-                <a href="/p/refleksvest?catid=100">
-                  <img class="carousel-product-img"
-                    src="https://www.shop4body.dk/billeder/10557-m/refleksvest-1-stk-.jpg" alt="Refleksvest - 1 stk.">
-                  <span class="salePercentFlag">25%</span>
-                </a>
-                <div class="item-des">
-                  <p class="carousel-prodheader">
-                    <a href="/p/refleksvest?catid=100">Refleksvest - 1 stk.</a>
-                  </p>
-                  <div class="item-description">Høy synlighet - bli sett fra alle kanter.</div>
-                  <span class="prices">
-                    <span class="striked">119,95</span>
-                    <span class="offerprice">89,95 kr</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="clear"></div>
-      </div>
-    </div>
+    
     <div class="my-container">
       <div class="product-wrapper history-wrapper">
         <div class="history-carousel-title">I det siste har du sett p&#xE5; disse produktene</div>
@@ -2926,9 +2938,7 @@
   <script src="./Shop4body.dk_files/jquery.cookie.js.download"></script>
   <script src="./Shop4body.dk_files/facebox.js.download"></script>
   <script src="./Shop4body.dk_files/eucookie.js.download"></script>
-  <script src="./lib/jquery/jquery.min.js"></script>
-  <script src="./lib/owlCarousel/owl.carousel.min.js"></script>
-  <script src="./lib/jquery-ui/jquery-ui.min.js"></script>
+  
   <script src="js/main.min.js"></script>
 
 

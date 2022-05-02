@@ -21,6 +21,7 @@ function styles(){
 
 function scripts(){
   return src([
+    'app/js/product-image-slider.js',
     'app/js/ui.js',
     'app/js/login.js',
     'app/js/suggestionsearch.js'
