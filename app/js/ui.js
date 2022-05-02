@@ -89,7 +89,20 @@ window.addEventListener('DOMContentLoaded', function () {
   //showDefaultPopup('default', 'aleert');
 });
 
-
+function checkForm() {
+  var variantId = $('input[name="variantid"]:checked').val();
+  if (variantId === "" || variantId === undefined) {
+    var extraVariantCheck = document.getElementById('variantid');
+    if (extraVariantCheck != null)
+      return true;
+    else {
+      //alert('Du skal velge farge');
+      showDefaultPopup('default', 'Du skal velge farge');
+      return false;
+    }
+  }
+  return true;
+}
 
 /***************************MODAL HANDLER END*******************************/
 
