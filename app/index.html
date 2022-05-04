@@ -14,13 +14,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./lib/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="./Shop4body.dk_files/font-awesome.min.css">
   <script src="./lib/jquery/jquery.min.js"></script>
-  <script src="./lib/owlCarousel/owl.carousel.min.js"></script>
+  <!-- <script src="./lib/owlCarousel/owl.carousel.min.js"></script> -->
   <script src="./lib/jquery-ui/jquery-ui.min.js"></script>
-  <link rel="stylesheet" href="scss/libs/owl.carousel.scss">
-  <link rel="stylesheet" href="scss/libs/owl.theme.default.scss">
   <link rel="stylesheet" href="css/application.min.css">
+
+  
 
   <!--[if IE]><html class="ie">< ![endif]-->
 
@@ -398,8 +399,7 @@
                     <fieldset class="single-option-radio" data-option="option1" name="variantids"
                       id="ProductSelect-option-0">
                       <input type="radio" onchange="updateVariantInfo(this, '')" value="2983" name="variantid"
-                        class="single-option-selector__radio" data-option="option1" id="ProductSelect-option-Size-2983"
-                        checked />
+                        class="single-option-selector__radio" data-option="option1" id="ProductSelect-option-Size-2983" />
                       <label for="ProductSelect-option-Size-2983">6 stk. </label>
                     </fieldset>
                   </div>
@@ -2931,16 +2931,48 @@
     </footer>
   </div>
 
+  
+
   <script src="./Shop4body.dk_files/jquery.autocomplete.min.js.download"></script>
   <script src="./Shop4body.dk_files/suggestionsearch.js.download"></script>
   <script src="./Shop4body.dk_files/login.js.download"></script>
-  <script src="./Shop4body.dk_files/bootstrap.min.js.download"></script>
+  <script src="./lib/bootstrap/bootstrap.min.js"></script>
   <script src="./Shop4body.dk_files/jquery.cookie.js.download"></script>
   <script src="./Shop4body.dk_files/facebox.js.download"></script>
   <script src="./Shop4body.dk_files/eucookie.js.download"></script>
-  
+  <script src="./2_files/owl.carousel.min.js.download"></script>  
   <script src="js/main.min.js"></script>
 
+  <script>
+    function showDefaultPopup(popupContentId, popupMessage){
+    let popupId = popupContentId;
+
+    let popup = document.querySelector(`#mdl-popup [data-popup="${popupId}"]`);
+
+    if (popup) {
+      let body = document.querySelector('body');
+      popup.querySelector('.popup-message').innerText = popupMessage;
+      popup.classList.add('visible');
+      popup.closest('#mdl-popup').classList.add('visible');
+      body.classList.add('scroll-lock');
+    }
+  }
+
+    function checkForm() {
+        var variantId = $('input[name="variantid"]:checked').val();
+        if (variantId === "" || variantId === undefined) {
+            var extraVariantCheck = document.getElementById('variantid');
+            if (extraVariantCheck != null)
+                return true;
+            else {
+                console.log('test');
+                showDefaultPopup('default', 'hello');
+                return false;
+            }
+        }
+        return true;
+    }
+  </script>
 
 
   <!-- Visual Studio Browser Link -->
