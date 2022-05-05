@@ -58,21 +58,6 @@ window.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  //popupContentId - string 'default'
-  function showDefaultPopup(popupContentId, popupMessage){
-    let popupId = popupContentId;
-
-    let popup = document.querySelector(`#mdl-popup [data-popup="${popupId}"]`);
-
-    if (popup) {
-      let body = document.querySelector('body');
-      popup.querySelector('.popup-message').innerText = popupMessage;
-      popup.classList.add('visible');
-      popup.closest('#mdl-popup').classList.add('visible');
-      body.classList.add('scroll-lock');
-    }
-  }
-
   function hideMdlPopup(e) {
 
     if (e.target.id === 'mdl-popup' || e.target.classList.contains('mdl-btn-close')) {
@@ -88,6 +73,21 @@ window.addEventListener('DOMContentLoaded', function () {
 
   //showDefaultPopup('default', 'aleert');
 });
+
+//popupContentId - string 'default'
+function showDefaultPopup(popupContentId, popupMessage){
+  let popupId = popupContentId;
+
+  let popup = document.querySelector(`#mdl-popup [data-popup="${popupId}"]`);
+
+  if (popup) {
+    let body = document.querySelector('body');
+    popup.querySelector('.popup-message').innerText = popupMessage;
+    popup.classList.add('visible');
+    popup.closest('#mdl-popup').classList.add('visible');
+    body.classList.add('scroll-lock');
+  }
+}
 
 
 /***************************MODAL HANDLER END*******************************/
@@ -345,3 +345,5 @@ if (dropDownItems.length !== 0) {
 
 
 }
+
+
