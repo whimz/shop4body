@@ -339,7 +339,20 @@
 
                       <div class="active item"><img
                           src="https://www.shop4body.dk/billeder/10614-l/nakkestoette-honningpude.jpg"
-                          alt="nakkestoette-honningpude.jpg" /></div>
+                          alt="nakkestoette-honningpude.jpg" />
+                      </div>
+                      <div class="active item"><img
+                        src="https://www.shop4body.dk/billeder/10615-xs/nakkestoette-honningpude.jpg"
+                        alt="nakkestoette-honningpude.jpg" />
+                    </div>
+                    <div class="active item"><img
+                      src="https://www.shop4body.dk/billeder/10611-xs/nakkestoette-honningpude.jpg"
+                      alt="nakkestoette-honningpude.jpg" />
+                  </div>
+                  <div class="active item"><img
+                    src="https://www.shop4body.dk/billeder/10612-xs/nakkestoette-honningpude.jpg"
+                    alt="nakkestoette-honningpude.jpg" />
+                </div>
                     </div>
                     <div class="carousel-indicators product_thumbnail">
                       <a data-target="#product_slider" data-slide-to="0" class=&quot;active&quot;
@@ -2945,18 +2958,18 @@
 
   <script>
     function showDefaultPopup(popupContentId, popupMessage){
-    let popupId = popupContentId;
+      let popupId = popupContentId;
 
-    let popup = document.querySelector(`#mdl-popup [data-popup="${popupId}"]`);
+      let popup = document.querySelector(`#mdl-popup [data-popup="${popupId}"]`);
 
-    if (popup) {
-      let body = document.querySelector('body');
-      popup.querySelector('.popup-message').innerText = popupMessage;
-      popup.classList.add('visible');
-      popup.closest('#mdl-popup').classList.add('visible');
-      body.classList.add('scroll-lock');
+      if (popup) {
+        let body = document.querySelector('body');
+        popup.querySelector('.popup-message').innerText = popupMessage;
+        popup.classList.add('visible');
+        popup.closest('#mdl-popup').classList.add('visible');
+        body.classList.add('scroll-lock');
+      }
     }
-  }
 
     function checkForm() {
         var variantId = $('input[name="variantid"]:checked').val();
