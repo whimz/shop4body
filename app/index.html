@@ -14,11 +14,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- <link rel="stylesheet" href="./lib/bootstrap/bootstrap.min.css"> -->
   <link rel="stylesheet" href="./Shop4body.dk_files/font-awesome.min.css">
   <script src="./lib/jquery/jquery.min.js"></script>
-  <!-- <script src="./lib/owlCarousel/owl.carousel.min.js"></script> -->
   <script src="./lib/jquery-ui/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="./lib/owlCarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./lib/owlCarousel/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/application.min.css">
 
   
@@ -320,6 +320,51 @@
   </header>
   <div class="wrapper">
     <div class="my-container">
+
+      <style>
+        .outer { margin:0 auto; max-width:800px;}
+#big .item { background: #ec6e46; padding: 120px 0px; margin:2px; color: #FFF; border-radius: 3px; text-align: center; }
+#thumbs .item { background: #C9C9C9; height:70px; line-height:70px; padding: 0px; margin:2px; color: #FFF; border-radius: 3px; text-align: center; cursor: pointer; }
+#thumbs .item h1 { font-size: 18px; }
+#thumbs .current .item { background:#FF5722; }
+.owl-theme .owl-nav [class*='owl-'] { -webkit-transition: all .3s ease; transition: all .3s ease; }
+.owl-theme .owl-nav [class*='owl-'].disabled:hover { background-color: #D6D6D6; }
+#big.owl-theme { position: relative; }
+#big.owl-theme .owl-next, #big.owl-theme .owl-prev { background:#333; width: 22px; line-height:40px; height: 40px; margin-top: -20px; position: absolute; text-align:center; top: 50%; }
+#big.owl-theme .owl-prev { left: 10px; }
+#big.owl-theme .owl-next { right: 10px; }
+#thumbs.owl-theme .owl-next, #thumbs.owl-theme .owl-prev { background:#333; }
+      </style>
+      <div class="outer">
+        <div id="big" class="owl-carousel owl-theme">
+          <div class=" item">
+            <img src="./images/img1.jpg" alt=""/>
+          </div>
+          <div class=" item">
+            <img src="./images/img2.jpg" alt=""/>
+          </div>
+          <div class=" item">
+            <img src="./images/img3.jpg" alt=""/>
+          </div>
+          <div class="active item">
+            <img src="./images/img4.jpg" alt=""/>
+          </div>
+        </div>
+        <div id="thumbs" class="owl-carousel owl-theme">
+          <div class=" item">
+            <img src="./images/img1.jpg" alt=""/>
+          </div>
+          <div class=" item">
+            <img src="./images/img2.jpg" alt=""/>
+          </div>
+          <div class=" item">
+            <img src="./images/img3.jpg" alt=""/>
+          </div>
+          <div class="active item">
+            <img src="./images/img4.jpg" alt=""/>
+          </div>
+        </div>
+      </div>
       <div class="product-wrapper">
 
         <div class="body-breadcrumb">
@@ -333,7 +378,58 @@
             <div class="product-img-header-area">
               <div class="product-img-area">
                 <div class="product-img">
-                  <div id="product_slider" class="carousel slide">
+                  <style>
+                    .outer { margin:0 auto; max-width:800px;}
+#big .item { background: #ec6e46; padding: 120px 0px; margin:2px; color: #FFF; border-radius: 3px; text-align: center; }
+#thumbs .item { background: #C9C9C9; height:70px; line-height:70px; padding: 0px; margin:2px; color: #FFF; border-radius: 3px; text-align: center; cursor: pointer; }
+#thumbs .item h1 { font-size: 18px; }
+#thumbs .current .item { background:#FF5722; }
+.owl-theme .owl-nav [class*='owl-'] { -webkit-transition: all .3s ease; transition: all .3s ease; }
+.owl-theme .owl-nav [class*='owl-'].disabled:hover { background-color: #D6D6D6; }
+#big.owl-theme { position: relative; }
+#big.owl-theme .owl-next, #big.owl-theme .owl-prev { background:#333; width: 22px; line-height:40px; height: 40px; margin-top: -20px; position: absolute; text-align:center; top: 50%; }
+#big.owl-theme .owl-prev { left: 10px; }
+#big.owl-theme .owl-next { right: 10px; }
+#thumbs.owl-theme .owl-next, #thumbs.owl-theme .owl-prev { background:#333; }
+                  </style>
+                  <div class="outer">
+                    <div id="big" class="owl-carousel owl-theme">
+                      <div class=" item">
+                        <img src="./images/img1.jpg" alt=""/>
+                      </div>
+                      <div class=" item">
+                        <img src="./images/img2.jpg" alt=""/>
+                      </div>
+                      <div class=" item">
+                        <img src="./images/img3.jpg" alt=""/>
+                      </div>
+                      <div class="active item">
+                        <img src="./images/img4.jpg" alt=""/>
+                      </div>
+                    </div>
+                    <div id="thumbs" class="owl-carousel owl-theme">
+                      <div class=" item">
+                        <img src="./images/img1.jpg" alt=""/>
+                      </div>
+                      <div class=" item">
+                        <img src="./images/img2.jpg" alt=""/>
+                      </div>
+                      <div class=" item">
+                        <img src="./images/img3.jpg" alt=""/>
+                      </div>
+                      <div class="active item">
+                        <img src="./images/img4.jpg" alt=""/>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+                  <!-- <div id="product_slider" class="carousel slide">
 
                     <div class="carousel-inner">
 
@@ -362,7 +458,7 @@
                         style="background-image:url('../images/img4-sm.jpg' );"></a>
                     </div>
                     <div class="clear"></div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
               <div class="product-header-area" itemscope itemtype="http://schema.org/Product">
@@ -2946,11 +3042,10 @@
   <script src="./Shop4body.dk_files/jquery.autocomplete.min.js.download"></script>
   <script src="./Shop4body.dk_files/suggestionsearch.js.download"></script>
   <script src="./Shop4body.dk_files/login.js.download"></script>
-  <!-- <script src="./lib/bootstrap/bootstrap.min.js"></script> -->
   <script src="./Shop4body.dk_files/jquery.cookie.js.download"></script>
   <script src="./Shop4body.dk_files/facebox.js.download"></script>
   <script src="./Shop4body.dk_files/eucookie.js.download"></script>
-  <script src="./2_files/owl.carousel.min.js.download"></script>  
+  <script src="./lib/owlCarousel/owl.carousel.min.js"></script>
   <script src="js/main.min.js"></script>
 
   <script>

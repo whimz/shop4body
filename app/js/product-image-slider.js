@@ -1,4 +1,4 @@
-let slides = document.querySelectorAll('#product_slider .carousel-inner .item img');
+/* let slides = document.querySelectorAll('#product_slider .carousel-inner .item img');
 
 slides.forEach(slide => slide.addEventListener('mousemove', setImagePosition));
 slides.forEach(slide => slide.addEventListener('mouseleave', setImageImagePosition));
@@ -26,3 +26,4 @@ function setActiveImageItem(event){
 }
 
 
+ */
