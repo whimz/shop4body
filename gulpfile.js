@@ -9,7 +9,7 @@ const uglify       = require('gulp-uglify-es').default;
 const browsersync  = require('browser-sync').create();
 
 function styles(){
-  return src('app/scss/main.scss')
+  return src('app/scss/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(scss({outputStyle: 'compressed'}))
     .pipe(autoprefixer(['last 15 versions', '< 1%', 'ie 10']))

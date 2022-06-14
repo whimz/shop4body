@@ -1,7 +1,7 @@
-﻿/// <reference path="vars.scss" />
+﻿@use "vars";
 
 .checkout {
-    background-color: $checkoutBackgroundColor;
+    background-color: vars.$checkoutBackgroundColor;
     width: auto;
     height: auto;
 }

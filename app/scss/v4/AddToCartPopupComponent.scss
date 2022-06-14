@@ -1,4 +1,4 @@
-﻿/// <reference path="vars.scss" />
+﻿@use "vars";
 
 .addBasketPopup .btn {
     display: block;
@@ -143,5 +143,5 @@
     font-size: 10px;
     font-weight: 400;
     align-self: end;
-    color: $fontColorRegularDiscount;
+    color: vars.$fontColorRegularDiscount;
 }

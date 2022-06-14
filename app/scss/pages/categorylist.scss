@@ -1,4 +1,4 @@
-﻿/// <reference path="../v4/vars.scss" />
+﻿@use "../v4/vars";
 
 .carousel-prodheader {
     height: 40px;
@@ -12,7 +12,7 @@
 }
 
 .salePercentFlag {
-    background-color: $fontColorRegularDiscount;
+    background-color: vars.$fontColorRegularDiscount;
     color: #fff;
     height: 40px;
     width: 40px;
@@ -114,7 +114,7 @@
 }
 
 .item-des .offerprice {
-    color: $fontColorRegularDiscount;
+    color: vars.$fontColorRegularDiscount;
 }
 
 /*

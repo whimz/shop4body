@@ -1,4 +1,4 @@
-﻿/// <reference path="vars.scss" />
+﻿@use "vars";
 
 
 .emptycart-warning {
@@ -25,7 +25,7 @@
 }
 
 .checkout {
-    background-color: $checkoutBackgroundColor;
+    background-color: vars.$checkoutBackgroundColor;
     width: auto;
     height: auto;
 }
@@ -41,22 +41,22 @@
     height: 100%;
     margin-right: 40px;
     border-radius: 3px;
-    background: $panelBackgroundColor;
-    border: 1px solid $panelBorderColor;
+    background: vars.$panelBackgroundColor;
+    border: 1px solid vars.$panelBorderColor;
     padding: 12px;
 }
 
 
 .cart-panel-title {
-    border-bottom: 1px solid $panelBorderColor;
+    border-bottom: 1px solid vars.$panelBorderColor;
     padding-bottom: 10px;
 }
 
 
 .cart-panel-title h1 {
-    color: $fontColorHeading;
-    font-size: $fontSizeHeading;
-    font-weight: $fontWeightNormal;
+    color: vars.$fontColorHeading;
+    font-size: vars.$fontSizeHeading;
+    font-weight: vars.$fontWeightNormal;
 }
 
 .cart-items {
@@ -102,8 +102,8 @@
     }
 
     &-quantityValue input:disabled {
-        -webkit-text-fill-color: $fontColorGrayed;
-        color: $fontColorGrayed;
+        -webkit-text-fill-color: vars.$fontColorGrayed;
+        color: vars.$fontColorGrayed;
         text-align: center;
         width: 50px;
         opacity: 1;
@@ -117,7 +117,7 @@
     }
 
     &-quantityPlus a {
-        color: $fontColorGrayed;
+        color: vars.$fontColorGrayed;
     }
 
     &-pricing {
@@ -128,12 +128,12 @@
 
     &-compareAtPrice {
         text-decoration: line-through;
-        color: $fontColorGrayed;
-        font-size: $fontSizePricing;
+        color: vars.$fontColorGrayed;
+        font-size: vars.$fontSizePricing;
     }
 
     &-price {
-        font-size: $fontSizePricing;
+        font-size: vars.$fontSizePricing;
     }
 
     &-discount {
@@ -142,11 +142,11 @@
     }
 
     &-volumeDiscount {
-        color: $fontColorVolumeDiscount;
+        color: vars.$fontColorVolumeDiscount;
     }
 
     &-regularDiscount {
-        color: $fontColorRegularDiscount;
+        color: vars.$fontColorRegularDiscount;
     }
 
     &-remove {
@@ -161,7 +161,7 @@
     }
 
     &-remove a {
-        color: $fontColorGrayed;
+        color: vars.$fontColorGrayed;
     }
 
     &-remove i:hover {
@@ -173,16 +173,16 @@
     height: 100%;
     width: 400px;
     border-radius: 3px;
-    background: $panelBackgroundColor;
-    border: 1px solid $panelBorderColor;
+    background: vars.$panelBackgroundColor;
+    border: 1px solid vars.$panelBorderColor;
     padding: 24px;
 
     &-title {
-        border-bottom: 1px solid $panelBorderColor;
+        border-bottom: 1px solid vars.$panelBorderColor;
         padding-bottom: 10px;
-        color: $fontColorHeading;
-        font-size: $fontSizeHeading;
-        font-weight: $fontWeightNormal;
+        color: vars.$fontColorHeading;
+        font-size: vars.$fontSizeHeading;
+        font-weight: vars.$fontWeightNormal;
     }
 
     &-cart-items {
@@ -218,18 +218,18 @@
     }
 
     &-cart-item-quantity {
-        color: $fontColorGrayed;
+        color: vars.$fontColorGrayed;
     }
 
     &-cart-item-compareAtPrice {
         text-decoration: line-through;
-        color: $fontColorGrayed;
-        font-size: $fontSizePricing;
+        color: vars.$fontColorGrayed;
+        font-size: vars.$fontSizePricing;
         white-space: nowrap;
     }
 
     &-cart-item-price {
-        font-size: $fontSizePricing;
+        font-size: vars.$fontSizePricing;
         white-space: nowrap;
     }
 
@@ -246,19 +246,19 @@
     }
 
     &-total-item-value {
-        font-size: $fontSizePricing;
+        font-size: vars.$fontSizePricing;
         margin-left: auto;
         padding-top: 10px;
         padding-bottom: 10px;
     }
 
     &-total-text {
-        font-weight: $fontWeightBold;
+        font-weight: vars.$fontWeightBold;
     }
 
     &-total-value {
-        font-size: $fontSizePricing;
-        font-weight: $fontWeightBold;
+        font-size: vars.$fontSizePricing;
+        font-weight: vars.$fontWeightBold;
     }
 
     &-checkout {
@@ -266,7 +266,7 @@
     }
 
     &-checkout-btn {
-        background: $fontColorBtn;
+        background: vars.$fontColorBtn;
         width: 100%;
         align-self: center;
         color: #fff;
@@ -283,18 +283,18 @@
     }
 
     &-checkout-btn:hover {
-        background: $fontColorHover;
+        background: vars.$fontColorHover;
         cursor: pointer;
     }
 
     &-item-discount {
-        color: $fontColorRegularDiscount;
+        color: vars.$fontColorRegularDiscount;
     }
 }
 
 .cart-divider {
     flex-basis: 100%;
-    border-top: 1px solid $panelBorderColor;
+    border-top: 1px solid vars.$panelBorderColor;
 }
 
 @media screen and (max-width: 990px) {
