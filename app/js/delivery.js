@@ -106,12 +106,12 @@ window.onload = function(){
     if(spinner){
       spinner.classList.add('visible');
     } 
-    //sendShopsRequest(requestParams, currentTab);
+    sendShopsRequest(requestParams, currentTab);
 /********************************************************************************
  * ******************************************************************************
  * ******************************************************************************
  */
-    testShopRequest(requestParams, currentTab);
+    //testShopRequest(requestParams, currentTab);
   }
 
   //hide openingHours table, show pickup-shops
@@ -204,12 +204,12 @@ window.onload = function(){
       }
     } 
     
-    //sendShopsRequest(requestParams, currentTab);
+    sendShopsRequest(requestParams, currentTab);
 /********************************************************************************
  * ******************************************************************************
  * ******************************************************************************
  */
-    testShopRequest(requestParams, currentTab);
+    //testShopRequest(requestParams, currentTab);
     
   }
 
