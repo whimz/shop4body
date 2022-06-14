@@ -9,7 +9,7 @@ const uglify       = require('gulp-uglify-es').default;
 const browsersync  = require('browser-sync').create();
 
 function styles(){
-  return src('app/scss/application.scss')
+  return src('app/scss/main.scss')
     .pipe(sourcemaps.init())
     .pipe(scss({outputStyle: 'compressed'}))
     .pipe(autoprefixer(['last 15 versions', '< 1%', 'ie 10']))
@@ -22,16 +22,16 @@ function styles(){
 function scripts(){
   return src([
     'app/js/polyfill.js',
-    'app/js/product-image-slider.js',
-    'app/js/ui.js',
     'app/js/login.js',
-    'app/js/suggestionsearch.js'
+    'app/js/suggestionsearch.js',
+    'app/js/ui.js',
+    'app/js/delivery.js'
   ])
   .pipe(concat('main.min.js'))
-  .pipe(babel({presets: ['@babel/env']}))
+  /* .pipe(babel({presets: ['@babel/env']}))
   .pipe(sourcemaps.init())
   .pipe(uglify())
-  .pipe(sourcemaps.write(''))
+  .pipe(sourcemaps.write('')) */
   .pipe(dest('app/js'))
   .pipe(browsersync.stream()); 
 }

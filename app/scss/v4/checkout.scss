@@ -1,0 +1,19 @@
+﻿/// <reference path="vars.scss" />
+
+.checkout {
+    background-color: $checkoutBackgroundColor;
+    width: auto;
+    height: auto;
+}
+
+.checkout-content {
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 990px) {
+    .checkout-content {
+        flex-direction: column;
+    }
+} 

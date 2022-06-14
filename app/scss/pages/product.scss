@@ -324,44 +324,12 @@ h4.cat-title {
     margin: 5px;
 }
 
-.carousel-inner {
-    height: 450px;
-    overflow: hidden;
-}
-
-@media screen and (max-width: 640px) {
-    .carousel-inner{
-        height: 600px;
-    }
-}
-
-
-@media screen and (max-width: 480px) {
-    .carousel-inner{
-        height: 300px;
-    }
-}
-
 .carousel-inner .item {
     text-align: center;
-    overflow: hidden;
-    display: none;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    height: 100%;
-    &.active{
-        display: block;
-        visibility: visible;
-        opacity: 1;
-    }
 }
-
-
 
 .carousel-inner .item img {
     display: inline-block;
-    cursor: zoom-in;
-    transform-origin: 0 0 0;
 }
 
 
